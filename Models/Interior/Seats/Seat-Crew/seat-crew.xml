@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    ============================================================
+            Seat Crew "Westland-Lynx-AH7" Animation file
+         
+                    Patrizio MELIS : Apr. 2019
+		   
+                        CC-BY-NC-SA 4.0
+                               
+     Strictly NOT allowed commercial projects with these files
+
+    ============================================================
+-->
+
+<PropertyList>
+
+  <path>seat-crew.ac</path>
+  <animation>
+    <!-- Objects-->
+    <object-name>seat-crew.000</object-name>
+    <object-name>seat-crew.001</object-name>
+    <object-name>seat-crew.002</object-name>
+  
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>seat-crew.000</object-name>
+    <object-name>seat-crew.001</object-name>
+    <object-name>seat-crew.002</object-name>
+	
+  <property-base>sim/model/livery</property-base>
+    <texture-prop>seat-crew</texture-prop>
+    <texture>seat-crew.jpg</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+  </animation>
+	
+</PropertyList>

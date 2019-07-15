@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    ===========================================================
+            Seat "Westland-Lynx-AH7" Animation file
+         
+                    Patrizio MELIS : Apr. 2019
+		   
+                        CC-BY-NC-SA 4.0
+                               
+     Strictly NOT allowed commercial projects with these files
+
+    ===========================================================
+-->
+
+<PropertyList>
+
+  <path>seat.ac</path>
+
+  <animation>
+    <!-- Objects-->
+    <object-name>Seat.000</object-name>
+    <object-name>Seat.001</object-name>
+    <object-name>Seat.002</object-name>
+  
+  </animation>
+  
+  <animation>
+    <type>material</type>
+	<object-name>Seat.000</object-name>
+	<object-name>Seat.001</object-name>
+	<object-name>Seat.002</object-name>
+	
+  <property-base>sim/model/livery</property-base>
+    <texture-prop>seat</texture-prop>
+    <texture>seat.jpg</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+  </animation>
+	
+</PropertyList>

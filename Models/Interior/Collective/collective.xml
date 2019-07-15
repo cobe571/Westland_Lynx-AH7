@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    ===========================================================
+           Collective "Westland-Lynx-AH7" Animation file
+
+                  Patrizio MELIS : Apr. 2019
+
+                     CC-BY-NC-SA 4.0
+
+     Strictly NOT allowed commercial projects with these files
+
+    ===========================================================
+-->
+
+<PropertyList>
+  
+  <path>collective.ac</path>
+  
+  <animation>
+    <!-- Objects List -->
+    <object-name>COL-AFCS-CUTOUT</object-name>
+    <object-name>COL-BASE</object-name>
+    <object-name>COL-BASE-SWITCH.000</object-name>
+    <object-name>COL-BASE-SWITCH.001</object-name>
+    <object-name>COL-BOLTS</object-name>
+    <object-name>COL-CAC-CUTOUT</object-name>
+    <object-name>COL-CWP-CANCEL</object-name>
+    <object-name>COL-FIRE</object-name>
+    <object-name>COL-FIRE-COVER</object-name>
+    <object-name>COL-GEAR</object-name>
+    <object-name>COL-HANDLE.000</object-name>
+    <object-name>COL-HANDLE.001</object-name>
+    <object-name>COL-POINTER</object-name>
+    <object-name>COL-PTT</object-name>
+    <object-name>COL-SHIELD</object-name>
+    <object-name>COL-STICK</object-name>
+    <object-name>COL-SWITCH.000</object-name>
+    <object-name>COL-SWITCH.001</object-name>
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <object-name>COL-AFCS-CUTOUT</object-name>
+    <object-name>COL-BASE</object-name>
+    <object-name>COL-BASE-SWITCH.000</object-name>
+    <object-name>COL-BASE-SWITCH.001</object-name>
+    <object-name>COL-BOLTS</object-name>
+    <object-name>COL-CAC-CUTOUT</object-name>
+    <object-name>COL-CWP-CANCEL</object-name>
+    <object-name>COL-FIRE</object-name>
+    <object-name>COL-FIRE-COVER</object-name>
+    <object-name>COL-GEAR</object-name>
+    <object-name>COL-HANDLE.000</object-name>
+    <object-name>COL-HANDLE.001</object-name>
+    <object-name>COL-POINTER</object-name>
+    <object-name>COL-PTT</object-name>
+    <object-name>COL-SHIELD</object-name>
+    <object-name>COL-STICK</object-name>
+    <object-name>COL-SWITCH.000</object-name>
+    <object-name>COL-SWITCH.001</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>collective</texture-prop>
+    <texture>collective.jpg</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+  
+  <animation>
+    <name>Collective-FULL</name>
+    <!-- Objects Put On List For Main Animation -->
+    <object-name>COL-AFCS-CUTOUT</object-name>
+    <object-name>COL-BASE-SWITCH.000</object-name>
+    <object-name>COL-BASE-SWITCH.001</object-name>
+    <object-name>COL-BOLTS</object-name>
+    <object-name>COL-CAC-CUTOUT</object-name>
+    <object-name>COL-CWP-CANCEL</object-name>
+    <object-name>COL-FIRE</object-name>
+    <object-name>COL-FIRE-COVER</object-name>
+    <object-name>COL-GEAR</object-name>
+    <object-name>COL-HANDLE.000</object-name>
+    <object-name>COL-HANDLE.001</object-name>
+    <object-name>COL-POINTER</object-name>
+    <object-name>COL-PTT</object-name>
+    <object-name>COL-SHIELD</object-name>
+    <object-name>COL-STICK</object-name>
+    <object-name>COL-SWITCH.000</object-name>
+    <object-name>COL-SWITCH.001</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>Collective-FULL</object-name>
+	
+    <property>controls/engines/engine[0]/throttle</property>
+    <factor> -20</factor>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
