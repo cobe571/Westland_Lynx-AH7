@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     =========================================================
+            Panel "Westland-Lynx-AH7" Animation file
+
+                    Patrizio MELIS : Apr. 2019
+		   
+                        CC-BY-NC-SA 4.0
+
+     Strictly NOT allowed commercial projects with these files
+
+     =========================================================
+-->
+
+<PropertyList>
+
+ <path>panel.ac</path>
+ 
+  <animation>
+    <!-- Opaque Objects List -->
+    <object-name>PANEL-CENTER</object-name>
+    <object-name>PANEL-LEFT</object-name>
+    <object-name>PANEL-MAIN</object-name>
+    <object-name>PANEL-RIGHT</object-name>
+    <object-name>SHIELD</object-name>	
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>PANEL-CENTER</object-name>
+    <object-name>PANEL-LEFT</object-name>
+    <object-name>PANEL-MAIN</object-name>
+    <object-name>PANEL-RIGHT</object-name>
+    <object-name>SHIELD</object-name>
+	
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>panel</texture-prop>
+    <texture>panel.jpg</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>75</max-m>
+  </animation>
+ 
+ <!-- Switches -->
+  <model>
+   <name>Landing lights</name>
+   <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/switches/landing-lights.xml</path>
+    <offsets> 
+        <x-m>-3.176</x-m>
+        <y-m>-0.098</y-m>
+        <z-m>0.045</z-m>
+        <pitch-deg>10</pitch-deg>
+        <roll-deg>-180</roll-deg>
+    </offsets>
+	<overlay>
+    <animation n="100">
+    <type>scale</type>
+    <property>constants/zero</property>
+    <x-offset>1.35</x-offset>
+    <y-offset>1.35</y-offset>
+    <z-offset>1.5</z-offset>
+    </animation>
+    </overlay>
+   </model>
+	
+  <animation>
+    <type>select</type>
+    <object-name>NoseGearLandinglight</object-name>
+    <object-name>Taxi-Light-Left</object-name>
+         
+    <condition>
+      <equals>
+        <property>controls/switches/landing-lights-switch</property>
+        <value> 0 </value>
+      </equals>
+    </condition>
+  </animation>
+ 
+  <model>
+    <name>beacon Lights</name>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/switches/beacon.xml</path>
+    <offsets> 
+        <x-m>-3.179</x-m>
+        <y-m>-0.098</y-m>
+        <z-m>0.075</z-m>
+        <pitch-deg>10</pitch-deg>
+        <roll-deg>-180</roll-deg>
+    </offsets>
+	<overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1.35</x-offset>
+        <y-offset>1.35</y-offset>
+        <z-offset>1.5</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <animation>
+        <type>select</type>
+        <object-name>BeaconFlare</object-name>
+        <object-name>BeaconRemb</object-name>
+        <condition>
+          <equals>
+          <property>controls/switches/beacon-switch</property>
+          <value> 0 </value>
+          </equals>
+        </condition>
+  </animation> 	
+   
+  <!-- Instruments -->
+  
+  	<model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/MagCompass/magcompass.xml</path>
+        <offsets>
+          <x-m>-3.243</x-m>
+          <y-m>-0.025</y-m>
+          <z-m>0.29</z-m>
+        <pitch-deg>0</pitch-deg>
+        </offsets>
+  </model>
+ 
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/ai/ai-gaz.xml</path>
+        <offsets>
+          <x-m>-3.216</x-m>
+          <y-m>0.5</y-m>
+          <z-m>-0.079</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    
+	<overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>0.3</x-offset>
+        <y-offset>1.38</y-offset>
+        <z-offset>1.5</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/ai/ai-gaz.xml</path>
+        <offsets>
+          <x-m>-3.2135</x-m>
+          <y-m>-0.491</y-m>
+          <z-m>-0.092</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>0.3</x-offset>
+        <y-offset>1.38</y-offset>
+        <z-offset>1.5</z-offset>
+        </animation>
+    </overlay>	
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/alt/alt-gaz.xml</path>
+        <offsets>
+          <x-m>-3.215</x-m>
+          <y-m>0.635</y-m>
+          <z-m>-0.096</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.45</y-offset>
+        <z-offset>1.45</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/alt/alt-gaz.xml</path>
+        <offsets>
+          <x-m>-3.217</x-m>
+          <y-m>-0.352</y-m>
+          <z-m>-0.088</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.45</y-offset>
+        <z-offset>1.45</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/asi/asi-gaz.xml</path>
+        <offsets>
+          <x-m>-3.221</x-m>
+          <y-m>0.37</y-m>
+          <z-m>-0.0735</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.4</y-offset>
+        <z-offset>1.4</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/asi/asi-gaz.xml</path>
+        <offsets>
+          <x-m>-3.214</x-m>
+          <y-m>-0.62-5</y-m>
+          <z-m>-0.106</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.4</y-offset>
+        <z-offset>1.4</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/chronograph/chronograph.xml</path>
+        <offsets>
+          <x-m>-3.175</x-m>
+          <y-m>0.35</y-m>
+          <z-m>0.055</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.25</y-offset>
+        <z-offset>1.25</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+   <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/MASS/MASS.xml</path>
+        <offsets>
+          <x-m>-3.183</x-m>
+          <y-m>0.202</y-m>
+          <z-m>-0.162</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.5</y-offset>
+        <z-offset>1.65</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/torque-gaz/torque-gaz.xml</path>
+        <offsets>
+          <x-m>-3.203</x-m>
+          <y-m>0.37</y-m>
+          <z-m>-0.178</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.4</y-offset>
+        <z-offset>1.4</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/torque-gaz/torque-gaz.xml</path>
+        <offsets>
+          <x-m>-3.196</x-m>
+          <y-m>-0.6215</y-m>
+          <z-m>-0.215</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.4</y-offset>
+        <z-offset>1.4</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+        <offsets>
+          <x-m>-3.219</x-m>
+          <y-m>0.37</y-m>
+          <z-m>-0.275</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1</y-offset>
+        <z-offset>1</z-offset>
+        </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/gyrocomp/gyro-compass.xml</path>
+        <offsets>
+           <x-m>-3.19</x-m>
+           <y-m>0.494</y-m>
+           <z-m>-0.224</z-m>
+           <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1</y-offset>
+        <z-offset>1</z-offset>
+        </animation>
+    </overlay>
+  </model>
+    
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/gyrocomp/gyro-compass.xml</path>
+        <offsets>
+           <x-m>-3.196</x-m>
+           <y-m>-0.496</y-m>
+           <z-m>-0.233</z-m>
+           <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1</y-offset>
+        <z-offset>1</z-offset>
+        </animation>
+    </overlay>
+  </model> 
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/ralt/ralt.xml</path>
+        <offsets>
+           <x-m>-3.198</x-m>
+           <y-m>0.629</y-m>
+           <z-m>-0.207</z-m>
+           <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.1</y-offset>
+        <z-offset>1.1</z-offset>
+        </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/ralt/ralt.xml</path>
+        <offsets>
+           <x-m>-3.201</x-m>
+           <y-m>-0.357</y-m>
+           <z-m>-0.191</z-m>
+           <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.1</y-offset>
+        <z-offset>1.1</z-offset>
+        </animation>
+    </overlay>
+  </model>
+	
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/vsi/vsi-gaz.xml</path>
+        <offsets>
+           <x-m>-3.18</x-m>
+           <y-m>0.628</y-m>
+           <z-m>-0.306</z-m>
+           <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1</y-offset>
+        <z-offset>1</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/vsi/vsi-gaz.xml</path>
+        <offsets>
+           <x-m>-3.184</x-m>
+           <y-m>-0.355</y-m>
+           <z-m>-0.28</z-m>
+           <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1</y-offset>
+        <z-offset>1</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/tach/tach.xml</path>
+        <offsets>
+          <x-m>-3.186</x-m>
+          <y-m>0.25</y-m>
+          <z-m>-0.286</z-m>
+          <pitch-deg>-10</pitch-deg>
+          </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.08</y-offset>
+        <z-offset>1.08</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/n1_1.xml</path>
+        <offsets>
+          <x-m>-3.185</x-m>
+          <y-m>0.10</y-m>
+          <z-m>-0.275</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.3</y-offset>
+        <z-offset>1.3</z-offset>
+        </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/n1_2.xml</path>
+        <offsets>
+          <x-m>-3.185</x-m>
+          <y-m>0.164</y-m>
+          <z-m>-0.275</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.3</y-offset>
+        <z-offset>1.3</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/n2_1.xml</path>
+        <offsets>
+          <x-m>-3.1755</x-m>
+          <y-m>0.10</y-m>
+          <z-m>-0.346</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.3</y-offset>
+        <z-offset>1.3</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/n2_2.xml</path>
+        <offsets>
+          <x-m>-3.1755</x-m>
+          <y-m>0.164</y-m>
+          <z-m>-0.346</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.3</y-offset>
+        <z-offset>1.3</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/fuel/fuelqty.xml</path>
+        <offsets>
+          <x-m>-3.1899</x-m>
+          <y-m>0.011</y-m>
+          <z-m>-0.275</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.0</y-offset>
+        <z-offset>1.0</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/epr_1.xml</path>
+        <offsets>
+          <x-m>-3.184</x-m>
+          <y-m>-0.117</y-m>
+          <z-m>-0.2975</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.13</y-offset>
+        <z-offset>1.13</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/epr_2.xml</path>
+        <offsets>
+          <x-m>-3.184</x-m>
+          <y-m>-0.065</y-m>
+          <z-m>-0.2975</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.13</y-offset>
+        <z-offset>1.13</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/exh_1.xml</path>
+        <offsets>
+          <x-m>-3.175</x-m>
+          <y-m>-0.117</y-m>
+          <z-m>-0.35</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.13</y-offset>
+        <z-offset>1.13</z-offset>
+        </animation>
+    </overlay>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/eng_control/exh_2.xml</path>
+        <offsets>
+          <x-m>-3.175</x-m>
+          <y-m>-0.065</y-m>
+          <z-m>-0.35</z-m>
+          <pitch-deg>-10</pitch-deg>
+        </offsets>
+    <overlay>
+        <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset>1</x-offset>
+        <y-offset>1.13</y-offset>
+        <z-offset>1.13</z-offset>
+        </animation>
+    </overlay>
+  </model>
+
+<!-- warning panel ligts -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/Instruments/cwp.xml</path>
+        <offsets>
+          <x-m> -0.220 </x-m>
+          <y-m> -0.024 </y-m>
+          <z-m>  0.056 </z-m>
+          <pitch-deg>0</pitch-deg>
+        </offsets>
+  </model>
+	
+</PropertyList>
