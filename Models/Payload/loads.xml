@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+	
+	
+<animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>500</max-m>
+    </animation>
+
+  <model>
+    <name>Pylons</name>
+     <path>Aircraft/Westland_Lynx-AH7/Models/Payload/Pylons/pylons.xml</path>
+      <offsets>
+        <x-m>0</x-m>
+        <y-m>0</y-m>
+        <z-m>0</z-m>
+        <pitch-deg>0.0</pitch-deg>
+     </offsets>
+  </model>	
+
+  <model>
+    <name>Transport</name>
+     <path>Aircraft/Westland_Lynx-AH7/Models/Payload/transport.xml</path>
+      <offsets>
+         <x-m>0</x-m>
+         <y-m>0</y-m>
+         <z-m>0</z-m>
+         <pitch-deg>0</pitch-deg>
+         <heading-deg>0</heading-deg>
+     </offsets>
+  </model>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Transport</object-name>      
+    <condition>
+     <equals>
+       <property>sim/multiplay/generic/string[1]</property>
+       <value>Transport</value>
+     </equals>
+    </condition>
+  </animation>
+
+  <model>
+    <name>Scout</name>
+     <path>Aircraft/Westland_Lynx-AH7/Models/Payload/Optics/scout.xml</path>
+      <offsets>
+        <x-m>0</x-m>
+        <y-m>0</y-m>
+        <z-m>0</z-m>
+        <pitch-deg>0</pitch-deg>
+        <heading-deg>0</heading-deg>
+      </offsets>
+  </model>
+  
+  <animation>
+    <type>select</type>
+    <object-name>Scout</object-name>      
+    <condition>
+      <equals>
+        <property>sim/multiplay/generic/string[1]</property>
+        <value>Scout</value>
+      </equals>
+    </condition>
+  </animation>
+ 
+
+  <model>
+    <name>Anti_Tank</name>
+      <path>Aircraft/Westland_Lynx-AH7/Models/Payload/Tow/tow.xml</path>
+       <offsets>
+         <x-m>0</x-m>
+         <y-m>0</y-m>
+         <z-m>0</z-m>
+         <pitch-deg>0</pitch-deg>
+         <heading-deg>0</heading-deg>
+      </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Anti_Tank</object-name>      
+    <condition>
+      <equals>
+       <property>sim/multiplay/generic/string[1]</property>
+       <value>Anti_Tank</value>
+      </equals>
+    </condition>
+  </animation>
+
+
+
+  
+  <animation>
+   <type>select</type>
+    <object-name>pylon.C</object-name>  
+    <condition>
+    
+    <or>
+
+    <equals>
+      <property>sim/multiplay/generic/string[1]</property>
+      <value>Transport</value>
+    </equals>
+  
+   <equals>
+     <property>sim/multiplay/generic/string[1]</property>
+     <value>Scout</value>
+   </equals>
+  
+   <equals>
+     <property>sim/multiplay/generic/string[1]</property>
+     <value>Anti_Tank</value>
+   </equals>
+  
+    </or>
+
+   </condition>
+  </animation>
+
+</PropertyList>

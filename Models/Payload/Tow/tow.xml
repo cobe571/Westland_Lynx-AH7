@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>tow.ac</path>
+  
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Westland_Lynx-AH7/Models/payload/Tow2", 10);
+    </load>
+
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+  
+  <animation>
+    <!-- Lista Oggetti / Object List -->
+	
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+	
+	<property-base>sim/model/livery</property-base>
+    <texture-prop>tow</texture-prop>
+    <texture>tow.jpg</texture>
+    <specular>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </specular>
+    <emission>
+      <red>   0.2 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	
+  </animation>
+	
+	<animation>
+    <type>material</type>
+   <object-name>C.002L</object-name>
+   <object-name>forms.000</object-name>
+   <object-name>forms.001</object-name>
+    <object-name>SL.000</object-name>
+   <object-name>C.001L</object-name>
+    <object-name>C.009L</object-name>
+    <object-name>C.005L</object-name>
+	 <object-name>C.000L</object-name>
+	 <object-name>C.006L</object-name>
+	 <object-name>C.008L</object-name>
+	 <object-name>C.007L</object-name>
+	  <object-name>C.010L</object-name>
+	  <object-name>C.011L</object-name>
+	   <object-name>C.003L</object-name>
+  <object-name>C.004L</object-name>
+    <object-name>C.002L.001</object-name>
+   <object-name>C.009L.008</object-name>
+   <object-name>C.009L.006</object-name>
+    <object-name>C.009L.007</object-name>
+   <object-name>C.009L.005</object-name>
+    <object-name>C.009L.011</object-name>
+    <object-name>C.009L.009</object-name>
+	 <object-name>C.009L.010</object-name>
+	 <object-name>C.009L.012</object-name>
+	 <object-name>C.009L.001</object-name>
+	 <object-name>C.009L.003</object-name>
+	  <object-name>C.009L.002</object-name>
+	  <object-name>C.009L.004</object-name>
+	   <object-name>C.009L.014</object-name>
+  <object-name>C.009L.016</object-name>
+    <object-name>C.009L.015</object-name>
+   <object-name>C.009L.013</object-name>
+   <object-name>forms.002</object-name>
+    <object-name>forms.003</object-name>
+   <object-name>S.004</object-name>
+    <object-name>S.002</object-name>
+    <object-name>S.003</object-name>
+	 <object-name>dobjL</object-name>
+	 <object-name>SR.009</object-name>
+	 <object-name>SR.002</object-name>
+	 <object-name>SR.006</object-name>
+	  <object-name>SR.003</object-name>
+	  <object-name>SL.010</object-name>
+	   <object-name>SL.006</object-name>
+  <object-name>SL.011</object-name>
+    <object-name>SL.012</object-name>
+   <object-name>SL.001</object-name>
+   <object-name>SL.003</object-name>
+    <object-name>SL.007</object-name>
+   <object-name>SL.002</object-name>
+    <object-name>SL.004</object-name>
+    <object-name>SL.013</object-name>
+	 <object-name>SL.017</object-name>
+	 <object-name>SL.015</object-name>
+	 <object-name>SL.014</object-name>
+	 <object-name>SL.005</object-name>
+	  <object-name>SL.016</object-name>
+	   <object-name>C.002R</object-name>
+   <object-name>C.001R</object-name>
+   <object-name>C.009R</object-name>
+    <object-name>C.000R</object-name>
+   <object-name>C.008R</object-name>
+    <object-name>C.006R</object-name>
+    <object-name>C.005R</object-name>
+	 <object-name>C.007R</object-name>
+	 <object-name>C.010R</object-name>
+	 <object-name>C.003R</object-name>
+	 <object-name>C.004R</object-name>
+	  <object-name>C.011R</object-name>
+	  <object-name>C.002R.001</object-name>
+	   <object-name>SR.004</object-name>
+  <object-name>SR.001</object-name>
+    <object-name>SR.007</object-name>
+   <object-name>SR.005</object-name>
+   <object-name>SR.000</object-name>
+    <object-name>SL.029</object-name>
+   <object-name>SL.023</object-name>
+    <object-name>SL.021</object-name>
+    <object-name>S.000</object-name>
+	 <object-name>S.012</object-name>
+	 <object-name>S.001</object-name>
+	 <object-name>dobjR</object-name>
+	 <object-name>SL.020</object-name>
+	  <object-name>C.009R.024</object-name>
+	  <object-name>C.009R.025</object-name>
+	   <object-name>C.009R.026</object-name>
+  <object-name>C.009R.027</object-name>
+    <object-name>C.009R.023</object-name>
+   <object-name>C.009R.022</object-name>
+   <object-name>C.009R.021</object-name>
+    <object-name>C.009R.032</object-name>
+   <object-name>C.009R.031</object-name>
+    <object-name>C.009R.029</object-name>
+    <object-name>C.009R.030</object-name>
+	 <object-name>C.009R.028</object-name>
+	 <object-name>C.009R.017</object-name>
+	 <object-name>C.009R.019</object-name>
+	 <object-name>C.009R.020</object-name>
+	  <object-name>C.009R.018</object-name>
+	  <object-name>forms.007</object-name>
+	   <object-name>forms.006</object-name>
+  <object-name>forms.005</object-name>
+    <object-name>forms.004</object-name>
+   <object-name>SL.024</object-name>
+   <object-name>SL.027</object-name>
+    <object-name>SL.019</object-name>
+   <object-name>SL.022</object-name>
+    <object-name>SL.025</object-name>
+    <object-name>SL.018</object-name>
+	 <object-name>SL.028</object-name>
+	 <object-name>SL.030</object-name>
+	 <object-name>SL.008</object-name>
+	 <object-name>SL.009</object-name>
+	  <object-name>SL.026</object-name>
+
+	
+	<property-base>sim/model/livery</property-base>
+    <texture-prop>tow</texture-prop>
+    <texture>tow.jpg</texture>
+    <specular>
+      <red>   0.3 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+    </specular>
+    <emission>
+      <red>   0.2 </red>
+      <green> 0.2 </green>
+      <blue>  0.2 </blue>
+    </emission>
+	
+  </animation>
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>  </object-name>
+    <object-name>  </object-name>
+  </animation>
+
+  <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>500</max-m>
+  </animation>
+
+
+<path>Aircraft/Westland_Lynx-AH7/Models/payload/tow.ac</path>
+
+
+        <model>
+            
+            <path>Aircraft/Westland_Lynx-AH7/Models/payload/scout.xml</path>
+            <offsets>
+                <pitch-deg>0</pitch-deg>
+                <x-m>0</x-m>
+                <y-m>0</y-m>
+                <z-m>0</z-m>
+            </offsets>
+        </model> 
+
+</PropertyList>

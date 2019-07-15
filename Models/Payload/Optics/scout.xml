@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>500</max-m>
+  </animation>
+
+  <path>Aircraft/Westland_Lynx-AH7/Models/Payload/Optics/optics.ac</path>
+
+
+</PropertyList>
