@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>tail-rotor.ac</path>
+
+<!--  REMBRANDT support for transparent objects-->
+  <effect>
+     <inherits-from>Effects/model-transparent</inherits-from>
+        <condition>
+         <property>sim/rendering/rembrandt/enabled</property>
+        </condition>
+        <object-name>tail-blurred</object-name>
+  </effect> 
+
+  <animation>
+    <type>material</type>
+    <object-name>T-ROTOR.001</object-name>
+    <object-name>T-ROTOR.002</object-name>
+    <object-name>tail-hub</object-name>
+    <object-name>tail-blades</object-name>
+		<global type="bool">true</global>
+		<transparency>
+			<alpha-prop>rotors/main/rpm</alpha-prop>
+			<factor>-0.0045</factor>
+			<offset>1</offset>
+			<max>1</max>
+		</transparency>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>T-ROTOR.001</object-name>
+    <object-name>T-ROTOR.002</object-name>
+    <object-name>tail-hub</object-name>
+    <object-name>tail-blades</object-name>
+    <object-name>tail-blurred</object-name>
+    <property>rotors/tail/blade[0]/position-deg</property>
+      <factor>1</factor>
+    <center>
+       <x-m> 8.10813</x-m>
+       <y-m>-0.15322</y-m>
+       <z-m> 1.42155</z-m>
+    </center>
+
+    <axis>
+      <x>  0.000 </x>
+      <y>  1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>spin</type>
+    <object-name>T-ROTOR.001</object-name>
+    <object-name>T-ROTOR.002</object-name>
+    <object-name>tail-hub</object-name>
+    <object-name>tail-blades</object-name>
+    <object-name>tail-blurred</object-name>
+    <property>rotors/tail/rpm</property>
+      <factor>1</factor>
+    <center>
+      <x-m> 8.10813</x-m>
+      <y-m>-0.15322</y-m>
+      <z-m> 1.42155</z-m>
+    </center>
+
+    <axis>
+      <x>  0.000 </x>
+      <y>  1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>T-ROTOR.001</object-name>
+    <object-name>T-ROTOR.002</object-name>
+    <object-name>tail-hub</object-name>
+    <object-name>tail-blades</object-name>
+        <condition>
+         <less-than>
+          <property>rotors/main/rpm</property>
+          <value>100</value>
+         </less-than>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+      <object-name>tail-blurred</object-name>
+        <condition>
+         <greater-than>
+          <property>rotors/main/rpm</property>
+          <value>99.999</value>
+         </greater-than>
+        </condition>
+  </animation>
+
+</PropertyList>
