@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     ==========================================================
+            Interior "Westland-Lynx-AH7" Animation file
+         
+                    Patrizio MELIS : Apr. 2019
+		   
+                        CC-BY-NC-SA 4.0
+                               
+     Strictly NOT allowed commercial projects with these files
+
+    ===========================================================
+-->
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Opaque Objects -->
+    <object-name>DOOR-GARNISH-IN-L</object-name>
+    <object-name>DOOR-GARNISH-IN-R</object-name>
+    <object-name>DOOR-HANDLE-L</object-name>
+    <object-name>DOOR-HANDLE-R</object-name>
+    <object-name>DOOR-IN-L</object-name>
+    <object-name>DOOR-IN-R</object-name>
+    <object-name>DOOR-MID-L</object-name>
+    <object-name>DOOR-MID-R</object-name>
+    <object-name>HATCH-GARNISH-IN-L</object-name>
+    <object-name>HATCH-GARNISH-IN-R</object-name>
+    <object-name>HATCH-HANDLE-L.000</object-name>
+    <object-name>HATCH-HANDLE-R.000</object-name>
+    <object-name>HATCH-IN-L</object-name>
+    <object-name>HATCH-IN-R</object-name>
+    <object-name>HATCH-MID-L</object-name>
+    <object-name>HATCH-MID-R</object-name>
+    <object-name>INTERIOR-BACK</object-name>
+    <object-name>INTERIOR-FLOOR</object-name>
+    <object-name>INTERIOR-HEAD</object-name>
+    <object-name>INTERIOR-SIDES</object-name>
+    <object-name>INTERIOR-TICKNESS</object-name>
+    <object-name>INTERIOR-TOP</object-name>
+    <object-name>INTERIOR-TOP-LAMP</object-name>
+    
+    <!-- Trasparent Objects -->
+    <object-name>DOOR-GLASS-IN-L.000</object-name>
+    <object-name>DOOR-GLASS-IN-L.001</object-name>
+    <object-name>DOOR-GLASS-IN-R.000</object-name>
+    <object-name>DOOR-GLASS-IN-R.001</object-name>
+    <object-name>GLASS-HATCH-IN-L</object-name>
+    <object-name>GLASS-HATCH-IN-R</object-name>
+    <object-name>GLASS-NOSE-IN</object-name>
+    <object-name>GLASS-TOP-IN</object-name>
+    <object-name>GLASS-WSCREEN-IN</object-name>
+    
+  </animation>
+  
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>DOOR-GARNISH-IN-L</object-name>
+    <object-name>DOOR-GARNISH-IN-R</object-name>
+    <object-name>DOOR-HANDLE-L</object-name>
+    <object-name>DOOR-HANDLE-R</object-name>
+    <object-name>DOOR-IN-L</object-name>
+    <object-name>DOOR-IN-R</object-name>
+    <object-name>DOOR-MID-L</object-name>
+    <object-name>DOOR-MID-R</object-name>
+    <object-name>HATCH-GARNISH-IN-L</object-name>
+    <object-name>HATCH-GARNISH-IN-R</object-name>
+    <object-name>HATCH-HANDLE-L.000</object-name>
+    <object-name>HATCH-HANDLE-R.000</object-name>
+    <object-name>HATCH-IN-L</object-name>
+    <object-name>HATCH-IN-R</object-name>
+    <object-name>HATCH-MID-L</object-name>
+    <object-name>HATCH-MID-R</object-name>
+    <object-name>INTERIOR-BACK</object-name>
+    <object-name>INTERIOR-FLOOR</object-name>
+    <object-name>INTERIOR-HEAD</object-name>
+    <object-name>INTERIOR-SIDES</object-name>
+    <object-name>INTERIOR-TICKNESS</object-name>
+    <object-name>INTERIOR-TOP</object-name>
+    <object-name>INTERIOR-TOP-LAMP</object-name>
+	
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>interior</texture-prop>
+    <texture>interior.jpg</texture>
+  <!-- <specular>
+       <red-prop>specular/red</red-prop>
+       <green-prop>specular/green</green-prop>
+       <blue-prop>specular/blue</blue-prop>
+       </specular> -->
+  </animation>
+
+  <!-- Working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Westland_Lynx-AH7/Models/Effects/Glass/glass</inherits-from>
+    <object-name>DOOR-GLASS-IN-L.000</object-name>
+    <object-name>DOOR-GLASS-IN-L.001</object-name>
+    <object-name>DOOR-GLASS-IN-R.000</object-name>
+    <object-name>DOOR-GLASS-IN-R.001</object-name>
+    <object-name>GLASS-HATCH-IN-L</object-name>
+    <object-name>GLASS-HATCH-IN-R</object-name>
+    <object-name>GLASS-NOSE-IN</object-name>
+    <object-name>GLASS-TOP-IN</object-name>
+    <object-name>GLASS-WSCREEN-IN</object-name>
+  </effect>
+  
+  <!-- Pilots
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Pilot/w-lynx-pilot.xml</path>
+    <offsets>
+      <x-m>  0.87732 </x-m>
+      <y-m> -0.56130 </y-m>
+      <z-m> -0.29525 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Pilot/w-lynx-pilot.xml</path>
+    <offsets>
+      <x-m>  0.87964 </x-m>
+      <y-m>  0.55335 </y-m>
+      <z-m> -0.29525 </z-m>
+    </offsets>
+  </model> -->
+  
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Seats/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.41903 </x-m>
+      <y-m>  0.53581 </y-m>
+      <z-m> -0.73499 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Seats/Seat/seat.xml</path>
+    <offsets>
+      <x-m> -2.41903 </x-m>
+      <y-m> -0.53581 </y-m>
+      <z-m> -0.73499 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Seat Crew -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Seats/Seat-Crew/seat-crew.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Panel -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Cyclic -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Cyclic/cyclic.xml</path>
+    <offsets>
+      <x-m> -2.80618 </x-m>
+      <y-m> -0.53581 </y-m>
+      <z-m> -0.73411 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Cyclic/cyclic.xml</path>
+    <offsets>
+      <x-m> -2.80618 </x-m>
+      <y-m>  0.53581 </y-m>
+      <z-m> -0.73411 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Collective -->
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Collective/collective.xml</path>
+    <offsets>
+      <x-m> -2.35452 </x-m>
+      <y-m> -0.79258 </y-m>
+      <z-m> -0.63643 </z-m>
+    </offsets>	
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Collective/collective.xml</path>
+    <offsets>
+      <x-m> -2.35452 </x-m>
+      <y-m>  0.18920 </y-m>
+      <z-m> -0.63643 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Pedals -->
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -3.24056 </x-m>
+      <y-m> -0.53581 </y-m>
+      <z-m> -0.64376 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/Pedals/pedals.xml</path>
+    <offsets>
+      <x-m> -3.24056 </x-m>
+      <y-m>  0.53581 </y-m>
+      <z-m> -0.64376 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Overhead panel -->
+
+  <model>
+    <path>Aircraft/Westland_Lynx-AH7/Models/Interior/overhead/overhead.xml</path>
+    <offsets>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.078 </z-m>
+    </offsets>
+  </model> 
+
+  <!-- Doors animation
+  <animation>
+    <name>DoorInLeft</name>
+    <object-name>intporteG</object-name>
+    <object-name>intvitreG</object-name>
+    <object-name>inttourporteG</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>DoorInLeft</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>DoorInLeft</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m> -2.57720 </x-m>
+      <y-m> -0.58568 </y-m>
+      <z-m> -0.48420 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <name>DoorInRight</name>
+    <object-name>intporteD</object-name>
+    <object-name>intvitreD</object-name>
+    <object-name>inttourporteD</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>DoorInRight</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>DoorInRight</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 80 </factor>
+    <center>
+      <x-m> -1.66389 </x-m>
+      <y-m>  0.60889 </y-m>
+      <z-m> -0.42408 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation> -->
+  
+</PropertyList>
