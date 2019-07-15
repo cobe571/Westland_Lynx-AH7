@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- 
+     ==========================================================
+            Main Rotor "Westland-Lynx-AH7" Animation file
+         
+                    Patrizio MELIS : Apr. 2019
+		   
+                        CC-BY-NC-SA 4.0
+                               
+     Strictly NOT allowed commercial projects with these files
+
+    ===========================================================
+-->
+
+  <PropertyList>
+
+    <path>main-rotor.ac</path>
+
+  <animation>
+    <!-- Opaque Objects List -->
+    <object-name>BLADE-A</object-name>
+    <object-name>BLADE-A-BOLTS.000</object-name>
+    <object-name>BLADE-A-BOLTS.001</object-name>
+    <object-name>BLADE-A-BOLTS.002</object-name>
+    <object-name>BLADE-A-BOLTS.003</object-name>
+    <object-name>BLADE-A-JOINT.000</object-name>
+    <object-name>BLADE-A-JOINT.001</object-name>
+    <object-name>BLADE-A-JOINT.002</object-name>
+    <object-name>BLADE-A-JOINT.003</object-name>
+    <object-name>BLADE-A-JOINT.004</object-name>
+    <object-name>BLADE-A-JOINT.005</object-name>
+    <object-name>BLADE-A-SUPPORT</object-name>
+    
+    <object-name>BLADE-B</object-name>
+    <object-name>BLADE-B-BOLTS.000</object-name>
+    <object-name>BLADE-B-BOLTS.001</object-name>
+    <object-name>BLADE-B-BOLTS.002</object-name>
+    <object-name>BLADE-B-BOLTS.003</object-name>
+    <object-name>BLADE-B-JOINT.000</object-name>
+    <object-name>BLADE-B-JOINT.001</object-name>
+    <object-name>BLADE-B-JOINT.002</object-name>
+    <object-name>BLADE-B-JOINT.003</object-name>
+    <object-name>BLADE-B-JOINT.004</object-name>
+    <object-name>BLADE-B-JOINT.005</object-name>
+    <object-name>BLADE-B-SUPPORT</object-name>
+    
+    <object-name>BLADE-C</object-name>
+    <object-name>BLADE-C-BOLTS.000</object-name>
+    <object-name>BLADE-C-BOLTS.001</object-name>
+    <object-name>BLADE-C-BOLTS.002</object-name>
+    <object-name>BLADE-C-BOLTS.003</object-name>
+    <object-name>BLADE-C-JOINT.000</object-name>
+    <object-name>BLADE-C-JOINT.001</object-name>
+    <object-name>BLADE-C-JOINT.002</object-name>
+    <object-name>BLADE-C-JOINT.003</object-name>
+    <object-name>BLADE-C-JOINT.004</object-name>
+    <object-name>BLADE-C-JOINT.005</object-name>
+    <object-name>BLADE-C-SUPPORT</object-name>
+    
+    <object-name>BLADE-D</object-name>
+    <object-name>BLADE-D-BOLTS.000</object-name>
+    <object-name>BLADE-D-BOLTS.001</object-name>
+    <object-name>BLADE-D-BOLTS.002</object-name>
+    <object-name>BLADE-D-BOLTS.003</object-name>
+    <object-name>BLADE-D-JOINT.000</object-name>
+    <object-name>BLADE-D-JOINT.001</object-name>
+    <object-name>BLADE-D-JOINT.002</object-name>
+    <object-name>BLADE-D-JOINT.003</object-name>
+    <object-name>BLADE-D-JOINT.004</object-name>
+    <object-name>BLADE-D-JOINT.005</object-name>
+    <object-name>BLADE-D-SUPPORT</object-name>
+    
+    <object-name>MAIN-HUB-TENS.000</object-name>
+    <object-name>MAIN-HUB-TENS.001</object-name>
+    <object-name>MAIN-HUB-TENS.002</object-name>
+    <object-name>MAIN-HUB-TENS.003</object-name>
+    <object-name>MAIN-HUB.000</object-name>
+    <object-name>MAIN-HUB.001</object-name>
+    <object-name>MAIN-HUB.002</object-name>
+    <object-name>MAIN-HUB.003</object-name>
+    <object-name>MAIN-HUB.004</object-name>
+    <object-name>MAIN-HUB.005</object-name>
+    <object-name>MAIN-HUB.006</object-name>
+    <object-name>ROTOR-BASE.000</object-name>
+    <object-name>ROTOR-BASE.001</object-name>
+    <object-name>ROTOR-BASE.002</object-name>
+
+    <!-- Transparent Objects List -->
+    <object-name>blurred1</object-name>
+    <object-name>blurred2</object-name>
+    <object-name>blurred3</object-name>
+    <object-name>blurred4</object-name>
+  </animation>
+
+    <!-- REMBRANDT support for transparent objects -->
+    <effect>
+        <inherits-from>Effects/model-transparent</inherits-from>
+        <condition>
+            <property>sim/rendering/rembrandt/enabled</property>
+        </condition>
+        <object-name>blurred1</object-name>
+        <object-name>blurred2</object-name>
+        <object-name>blurred3</object-name>
+        <object-name>blurred4</object-name>
+    </effect>
+
+    <!-- Objects Linked To Texture -->
+  <animation>
+    <type>material</type>
+    <object-name>BLADE-A</object-name>
+    <object-name>BLADE-A-BOLTS.000</object-name>
+    <object-name>BLADE-A-BOLTS.001</object-name>
+    <object-name>BLADE-A-BOLTS.002</object-name>
+    <object-name>BLADE-A-BOLTS.003</object-name>
+    <object-name>BLADE-A-JOINT.000</object-name>
+    <object-name>BLADE-A-JOINT.001</object-name>
+    <object-name>BLADE-A-JOINT.002</object-name>
+    <object-name>BLADE-A-JOINT.003</object-name>
+    <object-name>BLADE-A-JOINT.004</object-name>
+    <object-name>BLADE-A-JOINT.005</object-name>
+    <object-name>BLADE-A-SUPPORT</object-name>
+    
+    <object-name>BLADE-B</object-name>
+    <object-name>BLADE-B-BOLTS.000</object-name>
+    <object-name>BLADE-B-BOLTS.001</object-name>
+    <object-name>BLADE-B-BOLTS.002</object-name>
+    <object-name>BLADE-B-BOLTS.003</object-name>
+    <object-name>BLADE-B-JOINT.000</object-name>
+    <object-name>BLADE-B-JOINT.001</object-name>
+    <object-name>BLADE-B-JOINT.002</object-name>
+    <object-name>BLADE-B-JOINT.003</object-name>
+    <object-name>BLADE-B-JOINT.004</object-name>
+    <object-name>BLADE-B-JOINT.005</object-name>
+    <object-name>BLADE-B-SUPPORT</object-name>
+    
+    <object-name>BLADE-C</object-name>
+    <object-name>BLADE-C-BOLTS.000</object-name>
+    <object-name>BLADE-C-BOLTS.001</object-name>
+    <object-name>BLADE-C-BOLTS.002</object-name>
+    <object-name>BLADE-C-BOLTS.003</object-name>
+    <object-name>BLADE-C-JOINT.000</object-name>
+    <object-name>BLADE-C-JOINT.001</object-name>
+    <object-name>BLADE-C-JOINT.002</object-name>
+    <object-name>BLADE-C-JOINT.003</object-name>
+    <object-name>BLADE-C-JOINT.004</object-name>
+    <object-name>BLADE-C-JOINT.005</object-name>
+    <object-name>BLADE-C-SUPPORT</object-name>
+    
+    <object-name>BLADE-D</object-name>
+    <object-name>BLADE-D-BOLTS.000</object-name>
+    <object-name>BLADE-D-BOLTS.001</object-name>
+    <object-name>BLADE-D-BOLTS.002</object-name>
+    <object-name>BLADE-D-BOLTS.003</object-name>
+    <object-name>BLADE-D-JOINT.000</object-name>
+    <object-name>BLADE-D-JOINT.001</object-name>
+    <object-name>BLADE-D-JOINT.002</object-name>
+    <object-name>BLADE-D-JOINT.003</object-name>
+    <object-name>BLADE-D-JOINT.004</object-name>
+    <object-name>BLADE-D-JOINT.005</object-name>
+    <object-name>BLADE-D-SUPPORT</object-name>
+    
+    <object-name>MAIN-HUB-TENS.000</object-name>
+    <object-name>MAIN-HUB-TENS.001</object-name>
+    <object-name>MAIN-HUB-TENS.002</object-name>
+    <object-name>MAIN-HUB-TENS.003</object-name>
+    <object-name>MAIN-HUB.000</object-name>
+    <object-name>MAIN-HUB.001</object-name>
+    <object-name>MAIN-HUB.002</object-name>
+    <object-name>MAIN-HUB.003</object-name>
+    <object-name>MAIN-HUB.004</object-name>
+    <object-name>MAIN-HUB.005</object-name>
+    <object-name>MAIN-HUB.006</object-name>
+    <object-name>ROTOR-BASE.000</object-name>
+    <object-name>ROTOR-BASE.001</object-name>
+    <object-name>ROTOR-BASE.002</object-name>
+    
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>main-rotor</texture-prop>
+    <texture>main-rotor.jpg</texture>
+        <specular>
+         <red-prop>specular/red</red-prop>
+         <green-prop>specular/green</green-prop>
+         <blue-prop>specular/blue</blue-prop>
+        </specular>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>BLADE-A</object-name>
+    <object-name>BLADE-A-BOLTS.000</object-name>
+    <object-name>BLADE-A-BOLTS.001</object-name>
+    <object-name>BLADE-A-BOLTS.002</object-name>
+    <object-name>BLADE-A-BOLTS.003</object-name>
+    <object-name>BLADE-A-JOINT.000</object-name>
+    <object-name>BLADE-A-JOINT.001</object-name>
+    <object-name>BLADE-A-JOINT.002</object-name>
+    <object-name>BLADE-A-JOINT.003</object-name>
+    <object-name>BLADE-A-JOINT.004</object-name>
+    <object-name>BLADE-A-JOINT.005</object-name>
+    <object-name>BLADE-A-SUPPORT</object-name>
+    
+    <object-name>BLADE-B</object-name>
+    <object-name>BLADE-B-BOLTS.000</object-name>
+    <object-name>BLADE-B-BOLTS.001</object-name>
+    <object-name>BLADE-B-BOLTS.002</object-name>
+    <object-name>BLADE-B-BOLTS.003</object-name>
+    <object-name>BLADE-B-JOINT.000</object-name>
+    <object-name>BLADE-B-JOINT.001</object-name>
+    <object-name>BLADE-B-JOINT.002</object-name>
+    <object-name>BLADE-B-JOINT.003</object-name>
+    <object-name>BLADE-B-JOINT.004</object-name>
+    <object-name>BLADE-B-JOINT.005</object-name>
+    <object-name>BLADE-B-SUPPORT</object-name>
+    
+    <object-name>BLADE-C</object-name>
+    <object-name>BLADE-C-BOLTS.000</object-name>
+    <object-name>BLADE-C-BOLTS.001</object-name>
+    <object-name>BLADE-C-BOLTS.002</object-name>
+    <object-name>BLADE-C-BOLTS.003</object-name>
+    <object-name>BLADE-C-JOINT.000</object-name>
+    <object-name>BLADE-C-JOINT.001</object-name>
+    <object-name>BLADE-C-JOINT.002</object-name>
+    <object-name>BLADE-C-JOINT.003</object-name>
+    <object-name>BLADE-C-JOINT.004</object-name>
+    <object-name>BLADE-C-JOINT.005</object-name>
+    <object-name>BLADE-C-SUPPORT</object-name>
+    
+    <object-name>BLADE-D</object-name>
+    <object-name>BLADE-D-BOLTS.000</object-name>
+    <object-name>BLADE-D-BOLTS.001</object-name>
+    <object-name>BLADE-D-BOLTS.002</object-name>
+    <object-name>BLADE-D-BOLTS.003</object-name>
+    <object-name>BLADE-D-JOINT.000</object-name>
+    <object-name>BLADE-D-JOINT.001</object-name>
+    <object-name>BLADE-D-JOINT.002</object-name>
+    <object-name>BLADE-D-JOINT.003</object-name>
+    <object-name>BLADE-D-JOINT.004</object-name>
+    <object-name>BLADE-D-JOINT.005</object-name>
+    <object-name>BLADE-D-SUPPORT</object-name>
+	
+    <global type="bool">true</global>
+        <transparency>
+        <alpha-prop>rotors/main/rpm</alpha-prop>
+        <factor>-0.0045</factor>
+        <offset>1</offset>
+        <max>1</max>
+        </transparency>
+  </animation>
+    
+  <!-- Main Rotor tilt/pitch-deg -->
+  <animation>
+    <type>rotate</type>
+    <object-name>BLADE-A</object-name>
+    <object-name>BLADE-A-BOLTS.000</object-name>
+    <object-name>BLADE-A-BOLTS.001</object-name>
+    <object-name>BLADE-A-BOLTS.002</object-name>
+    <object-name>BLADE-A-BOLTS.003</object-name>
+    <object-name>BLADE-A-JOINT.000</object-name>
+    <object-name>BLADE-A-JOINT.001</object-name>
+    <object-name>BLADE-A-JOINT.002</object-name>
+    <object-name>BLADE-A-JOINT.003</object-name>
+    <object-name>BLADE-A-JOINT.004</object-name>
+    <object-name>BLADE-A-JOINT.005</object-name>
+    <object-name>BLADE-A-SUPPORT</object-name>
+    
+    <object-name>BLADE-B</object-name>
+    <object-name>BLADE-B-BOLTS.000</object-name>
+    <object-name>BLADE-B-BOLTS.001</object-name>
+    <object-name>BLADE-B-BOLTS.002</object-name>
+    <object-name>BLADE-B-BOLTS.003</object-name>
+    <object-name>BLADE-B-JOINT.000</object-name>
+    <object-name>BLADE-B-JOINT.001</object-name>
+    <object-name>BLADE-B-JOINT.002</object-name>
+    <object-name>BLADE-B-JOINT.003</object-name>
+    <object-name>BLADE-B-JOINT.004</object-name>
+    <object-name>BLADE-B-JOINT.005</object-name>
+    <object-name>BLADE-B-SUPPORT</object-name>
+    
+    <object-name>BLADE-C</object-name>
+    <object-name>BLADE-C-BOLTS.000</object-name>
+    <object-name>BLADE-C-BOLTS.001</object-name>
+    <object-name>BLADE-C-BOLTS.002</object-name>
+    <object-name>BLADE-C-BOLTS.003</object-name>
+    <object-name>BLADE-C-JOINT.000</object-name>
+    <object-name>BLADE-C-JOINT.001</object-name>
+    <object-name>BLADE-C-JOINT.002</object-name>
+    <object-name>BLADE-C-JOINT.003</object-name>
+    <object-name>BLADE-C-JOINT.004</object-name>
+    <object-name>BLADE-C-JOINT.005</object-name>
+    <object-name>BLADE-C-SUPPORT</object-name>
+    
+    <object-name>BLADE-D</object-name>
+    <object-name>BLADE-D-BOLTS.000</object-name>
+    <object-name>BLADE-D-BOLTS.001</object-name>
+    <object-name>BLADE-D-BOLTS.002</object-name>
+    <object-name>BLADE-D-BOLTS.003</object-name>
+    <object-name>BLADE-D-JOINT.000</object-name>
+    <object-name>BLADE-D-JOINT.001</object-name>
+    <object-name>BLADE-D-JOINT.002</object-name>
+    <object-name>BLADE-D-JOINT.003</object-name>
+    <object-name>BLADE-D-JOINT.004</object-name>
+    <object-name>BLADE-D-JOINT.005</object-name>
+    <object-name>BLADE-D-SUPPORT</object-name>
+    
+    <object-name>MAIN-HUB-TENS.000</object-name>
+    <object-name>MAIN-HUB-TENS.001</object-name>
+    <object-name>MAIN-HUB-TENS.002</object-name>
+    <object-name>MAIN-HUB-TENS.003</object-name>
+    <object-name>MAIN-HUB.000</object-name>
+    <object-name>MAIN-HUB.001</object-name>
+    <object-name>MAIN-HUB.002</object-name>
+    <object-name>MAIN-HUB.003</object-name>
+    <object-name>MAIN-HUB.004</object-name>
+    <object-name>MAIN-HUB.005</object-name>
+    <object-name>MAIN-HUB.006</object-name>
+    <object-name>ROTOR-BASE.000</object-name>
+    <object-name>ROTOR-BASE.001</object-name>
+    <object-name>ROTOR-BASE.002</object-name>
+
+    <property>rotors/main/tilt/pitch-deg</property>
+        <factor>-1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>1.75</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+  <!-- blurred parts tilt/pitch-deg -->
+  <animation>
+    <type>rotate</type>
+    <object-name>blurred1</object-name>
+    <object-name>blurred2</object-name>
+    <object-name>blurred3</object-name>
+    <object-name>blurred4</object-name>   
+    
+    <property>rotors/main/tilt/pitch-deg</property>
+        <factor>-1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>1.75</z-m>
+        </center>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+  <!-- blurred parts + HUB spin -->
+  <animation>
+    <type>spin</type>
+    <object-name>blurred1</object-name>
+    <object-name>blurred2</object-name>
+    <object-name>blurred3</object-name>
+    <object-name>blurred4</object-name>
+
+    <object-name>MAIN-HUB-TENS.000</object-name>
+    <object-name>MAIN-HUB-TENS.001</object-name>
+    <object-name>MAIN-HUB-TENS.002</object-name>
+    <object-name>MAIN-HUB-TENS.003</object-name>
+    <object-name>MAIN-HUB.000</object-name>
+    <object-name>MAIN-HUB.001</object-name>
+    <object-name>MAIN-HUB.002</object-name>
+    <object-name>MAIN-HUB.003</object-name>
+    <object-name>MAIN-HUB.004</object-name>
+    <object-name>MAIN-HUB.005</object-name>
+    <object-name>MAIN-HUB.006</object-name>
+    <object-name>ROTOR-BASE.000</object-name>
+    <object-name>ROTOR-BASE.001</object-name>
+    <object-name>ROTOR-BASE.002</object-name>
+
+    <property>rotors/main/rpm</property>
+    <factor>1</factor>
+    <center>
+        <!--x-m>0.009</x-m>
+        <y-m>-0.005</y-m>
+        <z-m>2.025</z-m-->
+        <x-m> 0.00</x-m>
+        <y-m>-0.00</y-m>
+        <z-m>1.75</z-m>
+    </center>
+
+    <axis>
+        <x>0.0</x>
+        <y>0.0</y>
+        <z>1.0</z>
+	    <!--x2-m> 0.009</x2-m>
+	    <y2-m>-0.005</y2-m>
+        <z2-m> 2.185</z2-m>
+        <x1-m> 0.019</x1-m>
+        <y1-m>-0.005</y1-m>
+        <z1-m> 2.185</z1-m-->
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>BLADE-A</object-name>
+    <object-name>BLADE-A-BOLTS.000</object-name>
+    <object-name>BLADE-A-BOLTS.001</object-name>
+    <object-name>BLADE-A-BOLTS.002</object-name>
+    <object-name>BLADE-A-BOLTS.003</object-name>
+    <object-name>BLADE-A-JOINT.000</object-name>
+    <object-name>BLADE-A-JOINT.001</object-name>
+    <object-name>BLADE-A-JOINT.002</object-name>
+    <object-name>BLADE-A-JOINT.003</object-name>
+    <object-name>BLADE-A-JOINT.004</object-name>
+    <object-name>BLADE-A-JOINT.005</object-name>
+    <object-name>BLADE-A-SUPPORT</object-name>
+    
+    <object-name>BLADE-B</object-name>
+    <object-name>BLADE-B-BOLTS.000</object-name>
+    <object-name>BLADE-B-BOLTS.001</object-name>
+    <object-name>BLADE-B-BOLTS.002</object-name>
+    <object-name>BLADE-B-BOLTS.003</object-name>
+    <object-name>BLADE-B-JOINT.000</object-name>
+    <object-name>BLADE-B-JOINT.001</object-name>
+    <object-name>BLADE-B-JOINT.002</object-name>
+    <object-name>BLADE-B-JOINT.003</object-name>
+    <object-name>BLADE-B-JOINT.004</object-name>
+    <object-name>BLADE-B-JOINT.005</object-name>
+    <object-name>BLADE-B-SUPPORT</object-name>
+    
+    <object-name>BLADE-C</object-name>
+    <object-name>BLADE-C-BOLTS.000</object-name>
+    <object-name>BLADE-C-BOLTS.001</object-name>
+    <object-name>BLADE-C-BOLTS.002</object-name>
+    <object-name>BLADE-C-BOLTS.003</object-name>
+    <object-name>BLADE-C-JOINT.000</object-name>
+    <object-name>BLADE-C-JOINT.001</object-name>
+    <object-name>BLADE-C-JOINT.002</object-name>
+    <object-name>BLADE-C-JOINT.003</object-name>
+    <object-name>BLADE-C-JOINT.004</object-name>
+    <object-name>BLADE-C-JOINT.005</object-name>
+    <object-name>BLADE-C-SUPPORT</object-name>
+    
+    <object-name>BLADE-D</object-name>
+    <object-name>BLADE-D-BOLTS.000</object-name>
+    <object-name>BLADE-D-BOLTS.001</object-name>
+    <object-name>BLADE-D-BOLTS.002</object-name>
+    <object-name>BLADE-D-BOLTS.003</object-name>
+    <object-name>BLADE-D-JOINT.000</object-name>
+    <object-name>BLADE-D-JOINT.001</object-name>
+    <object-name>BLADE-D-JOINT.002</object-name>
+    <object-name>BLADE-D-JOINT.003</object-name>
+    <object-name>BLADE-D-JOINT.004</object-name>
+    <object-name>BLADE-D-JOINT.005</object-name>
+    <object-name>BLADE-D-SUPPORT</object-name>
+
+    <condition>
+            <less-than>
+                <property>rotors/main/rpm</property>
+                <value>201</value>
+            </less-than>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>blurred1</object-name>
+    <object-name>blurred2</object-name>
+    <object-name>blurred3</object-name>
+    <object-name>blurred4</object-name>
+
+    <condition>
+            <greater-than>
+                <property>rotors/main/rpm</property>
+                <value>200.999</value>
+            </greater-than>
+        </condition>
+  </animation>
+
+    <!--  Blade 1 -->
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-A</object-name>
+        <object-name>BLADE-A-BOLTS.000</object-name>
+        <object-name>BLADE-A-BOLTS.001</object-name>
+        <object-name>BLADE-A-BOLTS.002</object-name>
+        <object-name>BLADE-A-BOLTS.003</object-name>
+        <object-name>BLADE-A-JOINT.000</object-name>
+        <object-name>BLADE-A-JOINT.001</object-name>
+        <object-name>BLADE-A-JOINT.002</object-name>
+        <object-name>BLADE-A-JOINT.003</object-name>
+        <object-name>BLADE-A-JOINT.004</object-name>
+        <object-name>BLADE-A-JOINT.005</object-name>
+        <object-name>BLADE-A-SUPPORT</object-name>
+		
+        <property>rotors/main/blade/position-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>	
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-A</object-name>
+        <object-name>BLADE-A-BOLTS.000</object-name>
+        <object-name>BLADE-A-BOLTS.001</object-name>
+        <object-name>BLADE-A-BOLTS.002</object-name>
+        <object-name>BLADE-A-BOLTS.003</object-name>
+        <object-name>BLADE-A-JOINT.000</object-name>
+        <object-name>BLADE-A-JOINT.001</object-name>
+        <object-name>BLADE-A-JOINT.002</object-name>
+        <object-name>BLADE-A-JOINT.003</object-name>
+        <object-name>BLADE-A-JOINT.004</object-name>
+        <object-name>BLADE-A-JOINT.005</object-name>
+        <object-name>BLADE-A-SUPPORT</object-name>
+		
+        <property>rotors/main/blade/incidence-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-A</object-name>
+        <object-name>BLADE-A-BOLTS.000</object-name>
+        <object-name>BLADE-A-BOLTS.001</object-name>
+        <object-name>BLADE-A-BOLTS.002</object-name>
+        <object-name>BLADE-A-BOLTS.003</object-name>
+        <object-name>BLADE-A-JOINT.000</object-name>
+        <object-name>BLADE-A-JOINT.001</object-name>
+        <object-name>BLADE-A-JOINT.002</object-name>
+        <object-name>BLADE-A-JOINT.003</object-name>
+        <object-name>BLADE-A-JOINT.004</object-name>
+        <object-name>BLADE-A-JOINT.005</object-name>
+        <object-name>BLADE-A-SUPPORT</object-name>
+
+        <property>rotors/main/blade/flap-deg</property>
+        <factor>0.3</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+  
+  
+    <!--  Blade 2 -->
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-B</object-name>
+        <object-name>BLADE-B-BOLTS.000</object-name>
+        <object-name>BLADE-B-BOLTS.001</object-name>
+        <object-name>BLADE-B-BOLTS.002</object-name>
+        <object-name>BLADE-B-BOLTS.003</object-name>
+        <object-name>BLADE-B-JOINT.000</object-name>
+        <object-name>BLADE-B-JOINT.001</object-name>
+        <object-name>BLADE-B-JOINT.002</object-name>
+        <object-name>BLADE-B-JOINT.003</object-name>
+        <object-name>BLADE-B-JOINT.004</object-name>
+        <object-name>BLADE-B-JOINT.005</object-name>
+        <object-name>BLADE-B-SUPPORT</object-name>
+		
+        <property>rotors/main/blade[1]/position-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>	
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-B</object-name>
+        <object-name>BLADE-B-BOLTS.000</object-name>
+        <object-name>BLADE-B-BOLTS.001</object-name>
+        <object-name>BLADE-B-BOLTS.002</object-name>
+        <object-name>BLADE-B-BOLTS.003</object-name>
+        <object-name>BLADE-B-JOINT.000</object-name>
+        <object-name>BLADE-B-JOINT.001</object-name>
+        <object-name>BLADE-B-JOINT.002</object-name>
+        <object-name>BLADE-B-JOINT.003</object-name>
+        <object-name>BLADE-B-JOINT.004</object-name>
+        <object-name>BLADE-B-JOINT.005</object-name>
+        <object-name>BLADE-B-SUPPORT</object-name>
+		
+        <property>rotors/main/blade[1]/incidence-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-B</object-name>
+        <object-name>BLADE-B-BOLTS.000</object-name>
+        <object-name>BLADE-B-BOLTS.001</object-name>
+        <object-name>BLADE-B-BOLTS.002</object-name>
+        <object-name>BLADE-B-BOLTS.003</object-name>
+        <object-name>BLADE-B-JOINT.000</object-name>
+        <object-name>BLADE-B-JOINT.001</object-name>
+        <object-name>BLADE-B-JOINT.002</object-name>
+        <object-name>BLADE-B-JOINT.003</object-name>
+        <object-name>BLADE-B-JOINT.004</object-name>
+        <object-name>BLADE-B-JOINT.005</object-name>
+        <object-name>BLADE-B-SUPPORT</object-name>
+
+        <property>rotors/main/blade/flap-deg</property>
+        <factor>0.3</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+  
+  
+    <!--  Blade 3 -->
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-C</object-name>
+        <object-name>BLADE-C-BOLTS.000</object-name>
+        <object-name>BLADE-C-BOLTS.001</object-name>
+        <object-name>BLADE-C-BOLTS.002</object-name>
+        <object-name>BLADE-C-BOLTS.003</object-name>
+        <object-name>BLADE-C-JOINT.000</object-name>
+        <object-name>BLADE-C-JOINT.001</object-name>
+        <object-name>BLADE-C-JOINT.002</object-name>
+        <object-name>BLADE-C-JOINT.003</object-name>
+        <object-name>BLADE-C-JOINT.004</object-name>
+        <object-name>BLADE-C-JOINT.005</object-name>
+        <object-name>BLADE-C-SUPPORT</object-name>
+		
+        <property>rotors/main/blade[2]/position-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>	
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-C</object-name>
+        <object-name>BLADE-C-BOLTS.000</object-name>
+        <object-name>BLADE-C-BOLTS.001</object-name>
+        <object-name>BLADE-C-BOLTS.002</object-name>
+        <object-name>BLADE-C-BOLTS.003</object-name>
+        <object-name>BLADE-C-JOINT.000</object-name>
+        <object-name>BLADE-C-JOINT.001</object-name>
+        <object-name>BLADE-C-JOINT.002</object-name>
+        <object-name>BLADE-C-JOINT.003</object-name>
+        <object-name>BLADE-C-JOINT.004</object-name>
+        <object-name>BLADE-C-JOINT.005</object-name>
+        <object-name>BLADE-C-SUPPORT</object-name>
+		
+        <property>rotors/main/blade[2]/incidence-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-C</object-name>
+        <object-name>BLADE-C-BOLTS.000</object-name>
+        <object-name>BLADE-C-BOLTS.001</object-name>
+        <object-name>BLADE-C-BOLTS.002</object-name>
+        <object-name>BLADE-C-BOLTS.003</object-name>
+        <object-name>BLADE-C-JOINT.000</object-name>
+        <object-name>BLADE-C-JOINT.001</object-name>
+        <object-name>BLADE-C-JOINT.002</object-name>
+        <object-name>BLADE-C-JOINT.003</object-name>
+        <object-name>BLADE-C-JOINT.004</object-name>
+        <object-name>BLADE-C-JOINT.005</object-name>
+        <object-name>BLADE-C-SUPPORT</object-name>
+
+        <property>rotors/main/blade/flap-deg</property>
+        <factor>0.3</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+  
+  
+  <!--  Blade 4 -->
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-D</object-name>
+        <object-name>BLADE-D-BOLTS.000</object-name>
+        <object-name>BLADE-D-BOLTS.001</object-name>
+        <object-name>BLADE-D-BOLTS.002</object-name>
+        <object-name>BLADE-D-BOLTS.003</object-name>
+        <object-name>BLADE-D-JOINT.000</object-name>
+        <object-name>BLADE-D-JOINT.001</object-name>
+        <object-name>BLADE-D-JOINT.002</object-name>
+        <object-name>BLADE-D-JOINT.003</object-name>
+        <object-name>BLADE-D-JOINT.004</object-name>
+        <object-name>BLADE-D-JOINT.005</object-name>
+        <object-name>BLADE-D-SUPPORT</object-name>
+		
+        <property>rotors/main/blade[3]/position-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>	
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-D</object-name>
+        <object-name>BLADE-D-BOLTS.000</object-name>
+        <object-name>BLADE-D-BOLTS.001</object-name>
+        <object-name>BLADE-D-BOLTS.002</object-name>
+        <object-name>BLADE-D-BOLTS.003</object-name>
+        <object-name>BLADE-D-JOINT.000</object-name>
+        <object-name>BLADE-D-JOINT.001</object-name>
+        <object-name>BLADE-D-JOINT.002</object-name>
+        <object-name>BLADE-D-JOINT.003</object-name>
+        <object-name>BLADE-D-JOINT.004</object-name>
+        <object-name>BLADE-D-JOINT.005</object-name>
+        <object-name>BLADE-D-SUPPORT</object-name>
+		
+        <property>rotors/main/blade[3]/incidence-deg</property>
+        <factor>1</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+  <animation>
+        <type>rotate</type>
+        <object-name>BLADE-D</object-name>
+        <object-name>BLADE-D-BOLTS.000</object-name>
+        <object-name>BLADE-D-BOLTS.001</object-name>
+        <object-name>BLADE-D-BOLTS.002</object-name>
+        <object-name>BLADE-D-BOLTS.003</object-name>
+        <object-name>BLADE-D-JOINT.000</object-name>
+        <object-name>BLADE-D-JOINT.001</object-name>
+        <object-name>BLADE-D-JOINT.002</object-name>
+        <object-name>BLADE-D-JOINT.003</object-name>
+        <object-name>BLADE-D-JOINT.004</object-name>
+        <object-name>BLADE-D-JOINT.005</object-name>
+        <object-name>BLADE-D-SUPPORT</object-name>
+
+        <property>rotors/main/blade/flap-deg</property>
+        <factor>0.3</factor>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+             <z-m>1.75</z-m>
+        </center>
+
+        <axis>
+            <x>1.0</x>
+            <y>-0.0</y>
+            <z>0.0</z>
+        </axis>
+  </animation>
+
+</PropertyList>
