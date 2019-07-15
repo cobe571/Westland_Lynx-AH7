@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+    ===========================================================
+           the "Westland-Lynx-AH7-Pilot" Animation file
+
+                    Patrizio MELIS : Apr. 2019
+
+                        CC-BY-NC-SA 4.0
+
+                "Ryan" is a new Flightgear Pilot
+
+     Strictly NOT allowed commercial projects with these files
+
+    ===========================================================
+-->
+
+<PropertyList>
+ 
+  <path>W-Lynx-AH7-Pilot.ac</path>
+
+  <animation>
+    <!-- Lista Oggetti -->
+    <object-name>Av.Braccio-Dx</object-name>
+    <object-name>Av.Braccio-Sx</object-name>
+    <object-name>Braccio-Dx</object-name>
+    <object-name>Braccio-Sx</object-name>
+    <object-name>Busto</object-name>
+    <object-name>Femore-Dx</object-name>
+    <object-name>Femore-Sx</object-name>
+    <object-name>Head-Eyes</object-name>
+    <object-name>Head-Face</object-name>
+    <object-name>Helmet-Balaclava</object-name>
+    <object-name>Helmet-Bolts-00</object-name>
+    <object-name>Helmet-Bolts-01</object-name>
+    <object-name>Helmet-Bolts-02</object-name>
+    <object-name>Helmet-Internal</object-name>
+    <object-name>Helmet-Main</object-name>
+    <object-name>Helmet-Plate-IN</object-name>
+    <object-name>Helmet-Plate-OUT</object-name>
+    <object-name>Helmet-Radio-Device.000</object-name>
+    <object-name>Helmet-Radio-Device.001</object-name>
+    <object-name>Helmet-SottoGola</object-name>
+    <object-name>Jacket.000</object-name>
+    <object-name>Jacket.001</object-name>
+    <object-name>Jacket.002</object-name>
+    <object-name>Jacket.003</object-name>
+    <object-name>Mano-Dx</object-name>
+    <object-name>Mano-Sx</object-name>
+    <object-name>Patch.000</object-name>
+    <object-name>Patch.001</object-name>
+    <object-name>Patch.002</object-name>
+    <object-name>Patch.003</object-name>
+    <object-name>Patch.004</object-name>
+    <object-name>Polpaccio-Dx</object-name>
+    <object-name>Polpaccio-Sx</object-name>
+    <object-name>Scarponcino-Dx</object-name>
+    <object-name>Scarponcino-Dx</object-name>
+	<!-- Oggetti trasparenti -->
+    <object-name>Helmet-Visor</object-name>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Av.Braccio-Dx</object-name>
+    <object-name>Av.Braccio-Sx</object-name>
+    <object-name>Braccio-Dx</object-name>
+    <object-name>Braccio-Sx</object-name>
+    <object-name>Busto</object-name>
+    <object-name>Femore-Dx</object-name>
+    <object-name>Femore-Sx</object-name>
+    <object-name>Head-Eyes</object-name>
+    <object-name>Head-Face</object-name>
+    <object-name>Helmet-Balaclava</object-name>
+    <object-name>Helmet-Bolts-00</object-name>
+    <object-name>Helmet-Bolts-01</object-name>
+    <object-name>Helmet-Bolts-02</object-name>
+    <object-name>Helmet-Internal</object-name>
+    <object-name>Helmet-Main</object-name>
+    <object-name>Helmet-Plate-IN</object-name>
+    <object-name>Helmet-Plate-OUT</object-name>
+    <object-name>Helmet-Radio-Device.000</object-name>
+    <object-name>Helmet-SottoGola</object-name>
+    <object-name>Jacket.000</object-name>
+    <object-name>Jacket.001</object-name>
+    <object-name>Jacket.002</object-name>
+    <object-name>Jacket.003</object-name>
+    <object-name>Mano-Dx</object-name>
+    <object-name>Mano-Sx</object-name>
+    <object-name>Patch.000</object-name>
+    <object-name>Patch.001</object-name>
+    <object-name>Patch.002</object-name>
+    <object-name>Patch.003</object-name>
+    <object-name>Patch.004</object-name>
+    <object-name>Polpaccio-Dx</object-name>
+    <object-name>Polpaccio-Sx</object-name>
+    <object-name>Scarponcino-Dx</object-name>
+    <object-name>Scarponcino-Dx</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>W-Lynx-AH7-Pilot</texture-prop>
+    <texture>W-Lynx-AH7-Pilot.jpg</texture>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>Helmet-Visor</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>Helmet-Visor</texture-prop>
+    <texture>transp.png</texture>
+  </animation>
+  
+  <animation>
+    <type>noshadow</type>
+    <object-name>Helmet-Visor</object-name>
+  </animation>
+  
+  <effect>
+    <inherits-from>Aircraft/Westland_Lynx-AH7/Models/Effects/Reflect/bk117reflect.eff</inherits-from>
+    <object-name>Helmet-Visor</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/Westland_Lynx-AH7/Models/Effects/Glass/glass</inherits-from>
+    <object-name>Helmet-Visor</object-name>
+  </effect>
+
+  <effect>
+    <inherits-from>Aircraft/Westland_Lynx-AH7/Models/Effects/Metal/metal-reflect</inherits-from>
+    <condition>
+       <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <object-name>Helmet-Bolts-00</object-name>
+    <object-name>Helmet-Radio-Device.001</object-name>
+  </effect>
+
+  <!-- Head Animation -->
+
+  <animation>
+    <name>AnimazioneTesta</name>
+    <object-name>Head-Eyes</object-name>
+    <object-name>Head-Face</object-name>
+    <object-name>Helmet-Balaclava</object-name>
+    <object-name>Helmet-Bolts-00</object-name>
+    <object-name>Helmet-Bolts-01</object-name>
+    <object-name>Helmet-Bolts-02</object-name>
+    <object-name>Helmet-Internal</object-name>
+    <object-name>Helmet-Main</object-name>
+    <object-name>Helmet-Plate-IN</object-name>
+    <object-name>Helmet-Plate-OUT</object-name>
+    <object-name>Helmet-Radio-Device.000</object-name>
+    <object-name>Helmet-Radio-Device.001</object-name>
+    <object-name>Helmet-SottoGola</object-name>
+    <object-name>Helmet-Visor</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimazioneTesta</object-name>
+    <property>controls/flight/elevator</property>
+    <factor> -15 </factor> 
+    <center>
+      <x-m> 0.0021 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.6553 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimazioneTesta</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>-25</factor>
+    <center>
+      <x-m> 0.0021 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.6553 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimazioneTesta</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -10.0</factor>
+    <center>
+      <x-m> 0.0021 </x-m>
+      <y-m> 0.0000 </y-m>
+      <z-m> 0.6553 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+
+  <!-- Animazione del braccio sinistro in funzione del throttle
+  
+  <animation>
+    <name>BraccioSinistro</name>
+	<object-name>Av.Braccio-Sx</object-name>
+	<object-name>Braccio-Sx</object-name>
+    <object-name>Mano-Sx</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>BraccioSinistro</object-name>
+    <property>/controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep> 20 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 40 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  1.5435 </x-m>
+      <y-m> -0.1655 </y-m>
+      <z-m>  0.4617 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+
+  <animation>
+    <name>AvanbraccioCompleto</name>
+    <object-name>Av.Braccio-Sx</object-name>
+    <object-name>Mano-Sx</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AvanbraccioCompleto</object-name>
+    <property>/controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep> -10 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -30 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  1.1598 </x-m>
+      <y-m> -0.1770 </y-m>
+      <z-m>  0.1210 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+   -->
+
+</PropertyList>
