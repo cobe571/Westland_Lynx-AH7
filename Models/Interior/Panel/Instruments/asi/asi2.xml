@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>asi2.ac</path>
+	
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>asi-needle1</object-name>
+
+   
+  </animation>
+
+ 
+
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>asi-needle1</object-name>
+    <emission>
+      <red>   0.028 </red>
+      <green> 0.014 </green>
+      <blue>  0.007 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+	
+  <animation>
+    <type>rotate</type>
+    <object-name>asi-needle1</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+     <interpolation>
+      <entry><ind> -999 </ind><dep>   0 </dep></entry>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>   10 </ind><dep>   5 </dep></entry>
+      <entry><ind>   20 </ind><dep>  10 </dep></entry>
+      <entry><ind>   30 </ind><dep>  30 </dep></entry>
+      <entry><ind>   40 </ind><dep>  60 </dep></entry>
+      <entry><ind>   50 </ind><dep>  90 </dep></entry>
+      <entry><ind>   60 </ind><dep> 120 </dep></entry>
+      <entry><ind>   70 </ind><dep> 150 </dep></entry>
+      <entry><ind>   80 </ind><dep> 180 </dep></entry>
+      <entry><ind>   90 </ind><dep> 195 </dep></entry>
+      <entry><ind>  100 </ind><dep> 210 </dep></entry>
+      <entry><ind>  110 </ind><dep> 225 </dep></entry>
+      <entry><ind>  120 </ind><dep> 240 </dep></entry>
+      <entry><ind>  130 </ind><dep> 275 </dep></entry>
+      <entry><ind>  140 </ind><dep> 270 </dep></entry>
+      <entry><ind>  150 </ind><dep> 300 </dep></entry>
+      <entry><ind>  180 </ind><dep> 330 </dep></entry>
+      <entry><ind>  999 </ind><dep> 359 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

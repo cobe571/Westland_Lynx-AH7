@@ -1,0 +1,207 @@
+
+<PropertyList>
+
+ <!-- Smiths Military Flight System - Powered Altimeter -->
+ 
+ <path>alt-gaz.ac</path>
+ 
+<animation>
+<object-name>glass</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>glass</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>glass</object-name>
+</animation>
+ 
+ 
+ 
+ 
+   <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>hpa.000</object-name>
+    <object-name>hpa.001</object-name>
+    <object-name>hpa.002</object-name>
+    <object-name>hpa.003</object-name>
+    <emission>
+            <red>   0.005 </red>
+      <green> 0.015 </green>
+      <blue>  0.030 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+ <!-- Altimeter Needle -->
+ <animation>
+  <type>rotate</type>
+  <object-name>needle1</object-name>
+  <!--<property>instrumentation/altimeter/indicated-altitude-ft</property>-->
+  <property>sim/multiplay/generic/float[15]</property>
+  <factor>0.36</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center> 
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+  <animation>
+  <type>rotate</type>
+  <object-name>needle2</object-name>
+  <!--<property>instrumentation/altimeter/indicated-altitude-ft</property>-->
+  <property>sim/multiplay/generic/float[15]</property>
+  <factor>0.036</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center> 
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ 
+ <!-- Pressure Digits -->
+ <animation>
+  <type>textranslate</type>
+  <object-name>hpa.000</object-name>
+  <!--<property>instrumentation/altimeter/setting-hpa</property>-->
+   <property>sim/multiplay/generic/float[16]</property>
+  <factor>-0.0001</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>hpa.001</object-name>
+ <!-- <property>instrumentation/altimeter/setting-hpa</property>-->
+  <property>sim/multiplay/generic/float[16]</property>
+  <factor>-0.001</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>hpa.002</object-name>
+ <!-- <property>instrumentation/altimeter/setting-hpa</property>-->
+  <property>sim/multiplay/generic/float[16]</property>
+  <factor>-0.01</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ <animation>
+  <type>textranslate</type>
+  <object-name>hpa.003</object-name>
+  <!--<property>/instrumentation/altimeter/setting-hpa</property>-->
+   <property>sim/multiplay/generic/float[16]</property>
+  <factor>-0.1</factor>
+  <step>1</step>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+    <type>pick</type>
+    <object-name>inhg.dn</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/altimeter/setting-inhg</property>
+      <step> -0.01 </step>
+      <min>  27.90 </min>
+      <max>  31.40 </max>
+      <wrap>  0.00 </wrap>
+    </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>inhg.dn</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/altimeter/setting-inhg</property>
+      <step> -0.10 </step>
+      <min>  27.90 </min>
+      <max>  31.40 </max>
+      <wrap>  0.00 </wrap>
+    </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>inhg.up</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/altimeter/setting-inhg</property>
+      <step> 0.01 </step>
+      <min> 27.90 </min>
+      <max> 31.40 </max>
+      <wrap> 0.00 </wrap>
+    </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>inhg.up</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>property-adjust</command>
+      <property>instrumentation/altimeter/setting-inhg</property>
+      <step> 0.10 </step>
+      <min> 27.90 </min>
+      <max> 31.40 </max>
+      <wrap> 0.00 </wrap>
+    </binding>
+    </action>
+  </animation>
+ 
+</PropertyList>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>asi-gaz.ac</path>
+	
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+  </animation>
+
+  
+  <animation>
+<object-name>glass</object-name>
+</animation>
+
+<animation>
+<type>noshadow</type>
+<object-name>glass</object-name>
+</animation>
+
+<animation>
+<type>shader</type>
+<shader>chrome</shader>
+<texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+<object-name>glass</object-name>
+</animation>
+ 
+ 
+
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle1</object-name>
+    <emission>
+            <red>   0.005 </red>
+      <green> 0.015 </green>
+      <blue>  0.030 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+	
+  <animation>
+    <type>rotate</type>
+    <object-name>needle1</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+	<!--<property>sim/multiplay/generic/float[14]</property>-->
+     <interpolation>
+      <entry><ind> -999 </ind><dep>   0 </dep></entry>
+      <entry><ind>    0 </ind><dep>   0 </dep></entry>
+      <entry><ind>   30 </ind><dep>  34 </dep></entry>
+      <entry><ind>   40 </ind><dep>  62 </dep></entry>
+      <entry><ind>   50 </ind><dep>  92 </dep></entry>
+      <entry><ind>   60 </ind><dep> 117 </dep></entry>
+      <entry><ind>   70 </ind><dep> 139 </dep></entry>
+      <entry><ind>   80 </ind><dep> 161 </dep></entry>
+      <entry><ind>   90 </ind><dep> 180 </dep></entry>
+      <entry><ind>  100 </ind><dep> 196 </dep></entry>
+      <entry><ind>  110 </ind><dep> 212 </dep></entry>
+      <entry><ind>  120 </ind><dep> 227 </dep></entry>
+      <entry><ind>  130 </ind><dep> 242 </dep></entry>
+      <entry><ind>  140 </ind><dep> 255 </dep></entry>
+      <entry><ind>  150 </ind><dep> 268 </dep></entry>
+      <entry><ind>  170 </ind><dep> 297 </dep></entry>
+      <entry><ind>  200 </ind><dep> 339 </dep></entry>
+      <entry><ind>  999 </ind><dep> 359 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

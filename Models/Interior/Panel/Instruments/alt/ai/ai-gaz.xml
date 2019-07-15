@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>ai-gaz.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>face</object-name>
+    <object-name>ball</object-name>
+    <object-name>aircraft</object-name> 
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>ball</object-name>
+    <object-name>aircraft</object-name>  
+    <object-name>roll-pointer</object-name> 
+    <object-name>flag.gyro</object-name> 
+    <object-name>flag.gs</object-name> 
+    <object-name>flag.hdg</object-name> 
+  <emission>
+            <red>   0.005 </red>
+      <green> 0.015 </green>
+      <blue>  0.030 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ball</object-name>
+    <property>/orientation/roll-deg</property>
+    <factor>1</factor>
+    <center>
+      <x-m> -0.46 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>  
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ball</object-name>
+    <property>/orientation/pitch-deg</property>
+    <factor>1</factor>
+    <center>
+      <x-m> -0.046 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>  
+
+  <animation>
+    <type>rotate</type>
+        <object-name>roll-pointer</object-name> 
+    <property>/orientation/roll-deg</property>
+    <factor>1</factor>
+    <center>
+     <x-m> 0.019 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+   <animation>
+    <type>rotate</type>
+        <object-name>ball</object-name> 
+	<property>/engines/engine/n1-rpm</property>
+	<condition>
+		<less-than>
+			<property>/engines/engine/n1-rpm</property>
+			<value>35000</value>
+		</less-than>
+	</condition>
+    <interpolation>
+      <entry><ind>  	0 </ind><dep> 49 </dep></entry>
+      <entry><ind>  32000 </ind><dep> 50 </dep></entry>
+      <entry><ind>  33000 </ind><dep> 35 </dep></entry>
+      <entry><ind>  34000 </ind><dep>-20 </dep></entry>
+      <entry><ind>  35000 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <center>
+     <x-m> 0.019 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+     <animation>
+    <type>rotate</type>
+        <object-name>ball</object-name> 
+	<property>/engines/engine/n1-rpm</property>
+	<condition>
+		<less-than>
+			<property>/engines/engine/n1-rpm</property>
+			<value>35000</value>
+		</less-than>
+	</condition>
+    <interpolation>
+      <entry><ind>  	0 </ind><dep>  19 </dep></entry>
+      <entry><ind>  32000 </ind><dep>  20 </dep></entry>
+      <entry><ind>  33000 </ind><dep>  15 </dep></entry>
+      <entry><ind>  34000 </ind><dep> -10 </dep></entry>
+      <entry><ind>  35000 </ind><dep>   0 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -0.046 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  
+  
+   
+  
+   <animation>
+    <type>rotate</type>
+    <object-name>flag.gyro</object-name>
+	<property>/engines/engine/n1-rpm</property>
+    <interpolation>
+      <entry><ind>  	0 </ind><dep>    0 </dep></entry>
+      <entry><ind>  32000 </ind><dep>   -5 </dep></entry>
+      <entry><ind>  34000 </ind><dep> -110 </dep></entry>
+    </interpolation>
+    <center>
+     <x-m> 0.000 </x-m>
+     <y-m> 0.040 </y-m>
+     <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+ 
+    <animation>
+    <type>rotate</type>
+    <object-name>flag.gs</object-name>
+	<property>/instrumentation/nav/gs-in-range</property>
+    <interpolation>
+      <entry><ind>  	0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep> -60 </dep></entry>
+    </interpolation>
+    <center>
+     <x-m> 0.000 </x-m>
+     <y-m> -0.040 </y-m>
+     <z-m> 0.000 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>  
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>flag.hdg</object-name>
+	<property>/instrumentation/nav/in-range</property>
+    <interpolation>
+      <entry><ind>  	0 </ind><dep>  0 </dep></entry>
+      <entry><ind>  1 </ind><dep> 70 </dep></entry>
+    </interpolation>
+    <center>
+     <x-m> 0.000 </x-m>
+     <y-m> 0.000 </y-m>
+     <z-m> 0.040 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+  <!--needle.glideslope-->
+      <animation>
+    <type>rotate</type>
+    <object-name>needle.glideslope</object-name>
+	<property>/instrumentation/nav/gs-needle-deflection</property>
+	<factor>-14</factor>
+    <center>
+      <x-m> -0.046 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+    <!--needle.localiser-->
+      <animation>
+    <type>rotate</type>
+    <object-name>needle.localiser</object-name>
+	<property>/instrumentation/nav/heading-needle-deflection</property>
+	<factor>5</factor>
+    <center>
+      <x-m> -0.046 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation> 
+  
+
+</PropertyList>
+
