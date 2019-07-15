@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<PropertyList> 
+	<path>overhead.ac</path>
+
+	<!--  LoD  -->
+	<animation> 
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>35</max-m>
+	</animation>
+	
+<animation>
+<type>rotate</type>
+<object-name>eng1_1</object-name>
+<object-name>eng1_0</object-name>
+
+
+<property>controls/engines/engine/power</property>
+<factor>60</factor>
+<center>
+<x-m>-2.75</x-m>
+<y-m>-0.05</y-m>
+<z-m>0.65</z-m>
+</center>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+</animation>
+
+
+<animation>
+<type>rotate</type>
+
+<object-name>eng2_1</object-name>
+<object-name>eng2_0</object-name>
+
+<property>controls/engines/engine[1]/power</property>
+<factor>60</factor>
+<center>
+<x-m>-2.75</x-m>
+<y-m>0.05</y-m>
+<z-m>0.65</z-m>
+</center>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+</animation>
+
+ <!-- Rotorbrake animation -->
+  
+   <animation>
+        <type>rotate</type>
+        <object-name>brake_1</object-name>
+		 <object-name>brake_0</object-name>
+       <property>controls/rotor/brake</property>
+		<factor>40</factor>
+      <axis>
+        <x>0</x>
+        <y> -1 </y>
+        <z> 0 </z>
+      </axis>
+      <center>
+        <x-m> -2.76</x-m>
+        <y-m> 0 </y-m>
+        <z-m> 0.65</z-m>  
+      </center>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+         <object-name>brake_1</object-name>
+		 <object-name>brake_0</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+	<binding>
+					<command>nasal</command>
+					<script>
+						var p = "/controls/rotor/brake";
+						setprop(p, !getprop(p));
+					</script>
+				</binding>
+        </action>
+    </animation>	
+	
+</PropertyList>
