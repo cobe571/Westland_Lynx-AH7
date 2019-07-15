@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>mainpfd.ac</path>
+  
+  <animation>
+    <object-name>bezel</object-name>
+    <!-- <object-name>screen</object-name> -->
+    <object-name>fond</object-name>
+    <object-name>buttons</object-name>
+    
+    <object-name>ai.background</object-name>
+    <object-name>ai.pitch.indicator</object-name>
+    <object-name>ai.roll.ref</object-name>
+    <object-name>ai.roll.indicator</object-name>
+    <object-name>ai.fd.bars</object-name>
+    <object-name>ai.cursor.L</object-name>
+    <object-name>ai.cursor.C</object-name>
+    <object-name>ai.cursor.R</object-name>
+    
+    <object-name>asi.tape</object-name>
+    <object-name>asi.cursor.100</object-name>
+    <object-name>asi.cursor.010</object-name>
+    <object-name>asi.cursor.001</object-name>
+    <object-name>asi.bug</object-name>
+    
+    <object-name>alt.tape</object-name>
+    <object-name>alt.vs.ref</object-name>
+    <object-name>alt.bug</object-name>
+    <object-name>alt.cursor.10000</object-name>
+    <object-name>alt.cursor.00100</object-name>
+    <object-name>alt.cursor.00011</object-name>
+    <object-name>alt.cursor</object-name>
+    <object-name>alt.vs.ptr</object-name>
+    <object-name>alt.vs.bug</object-name>
+    
+    <object-name>hsi.fond</object-name>
+    <object-name>hsi.compass</object-name>
+    <object-name>hsi.bezel</object-name>
+    <object-name>hsi.crs.deflect.ref</object-name>
+    <object-name>hsi.crs.plane</object-name>
+    <object-name>hsi.crs.pointer</object-name>
+    <object-name>hsi.crs.deflection</object-name>
+    <object-name>hsi.bug.GPS</object-name>
+    <object-name>hsi.bug.HDG</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>ai.background</object-name>
+    <object-name>ai.pitch.indicator</object-name>
+    <object-name>ai.roll.ref</object-name>
+    <object-name>ai.roll.indicator</object-name>
+    <object-name>ai.fd.bars</object-name>
+    <object-name>ai.cursor.L</object-name>
+    <object-name>ai.cursor.C</object-name>
+    <object-name>ai.cursor.R</object-name>
+    
+    <object-name>asi.tape</object-name>
+    <object-name>asi.cursor.100</object-name>
+    <object-name>asi.cursor.010</object-name>
+    <object-name>asi.cursor.001</object-name>
+    <object-name>asi.bug</object-name>
+    
+    <object-name>alt.tape</object-name>
+    <object-name>alt.vs.ref</object-name>
+    <object-name>alt.bug</object-name>
+    <object-name>alt.cursor.10000</object-name>
+    <object-name>alt.cursor.00100</object-name>
+    <object-name>alt.cursor.00011</object-name>
+    <object-name>alt.cursor</object-name>
+    <object-name>alt.vs.ptr</object-name>
+    <object-name>alt.vs.bug</object-name>
+    
+    <object-name>hsi.fond</object-name>
+    <object-name>hsi.compass</object-name>
+    <object-name>hsi.bezel</object-name>
+    <object-name>hsi.crs.deflect.ref</object-name>
+    <object-name>hsi.crs.plane</object-name>
+    <object-name>hsi.crs.pointer</object-name>
+    <object-name>hsi.crs.deflection</object-name>
+    <object-name>hsi.bug.GPS</object-name>
+    <object-name>hsi.bug.HDG</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>bezel</object-name>
+    <!-- <object-name>screen</object-name> -->
+    <object-name>fond</object-name>
+    <object-name>buttons</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <blue>  0.2 </blue>
+      <red>   0.2 </red>
+      <green> 0.2 </green>
+    </emission>
+  </animation>
+  
+  <!-- ATTITUDE INDICATOR -->
+  <animation>
+    <type>texmultiple</type>
+    <object-name>ai.pitch.indicator</object-name>
+    <transform>
+      <subtype>textranslate</subtype>
+      <property>/orientation/pitch-deg</property>
+      <factor> 0.005 </factor>
+      <center>
+        <x> 0.5 </x>
+        <y> 0.5 </y>
+      </center>
+      <axis>
+        <x> 0 </x>
+        <y> 1 </y>
+        <z> 0 </z>
+      </axis>
+    </transform>
+    <transform>
+      <subtype>texrotate</subtype>
+      <property>/orientation/roll-deg</property>
+      <min> -180 </min>
+      <max>  180 </max>
+      <center>
+        <x> 0.5 </x>
+        <y> 0.5 </y>
+      </center>
+      <axis>
+        <x> 0 </x>
+        <y> 0 </y>
+        <z>-1 </z>
+      </axis>
+    </transform>
+  </animation>
+  
+  <animation>
+    <type>texmultiple</type>
+    <object-name>ai.background</object-name>
+    <transform>
+      <subtype>textranslate</subtype>
+      <property>/orientation/pitch-deg</property>
+      <factor> 0.003 </factor>
+      <center>
+        <x> 0.5 </x>
+        <y> 0.5 </y>
+      </center>
+      <axis>
+        <x> 0 </x>
+        <y> 1 </y>
+        <z> 0 </z>
+      </axis>
+    </transform>
+    <transform>
+      <subtype>texrotate</subtype>
+      <property>/orientation/roll-deg</property>
+      <min> -180 </min>
+      <max>  180 </max>
+      <center>
+        <x> 0.5 </x>
+        <y> 0.5 </y>
+      </center>
+      <axis>
+        <x>  0 </x>
+        <y>  0 </y>
+        <z> -1 </z>
+      </axis>
+    </transform>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>ai.roll.ref</object-name>
+    <property>/orientation/roll-deg</property>
+    <center>
+      <x-m> 0.061 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.027 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>ai.fd.bars</object-name>
+    <property>/autopilot/internal/target-roll-deg</property>
+    <center>
+      <x-m> 0.061 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.027 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>ai.fd.bars</object-name>
+    <property>/orientation/roll-deg</property>
+    <center>
+      <x-m> 0.061 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.027 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>ai.fd.bars</object-name>
+    <property>/orientation/pitch-deg</property>
+    <factor> 0.00135 </factor>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>ai.fd.bars</object-name>
+    <property>/autopilot/internal/target-pitch-deg</property>
+    <factor> 0.00135 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <!-- AIRSPEED INDICATOR -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>asi.tape</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <factor> 0.0025 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>asi.cursor.100</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <step> 100 </step>
+    <factor> 0.001 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>asi.cursor.010</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <step> 10 </step>
+    <factor> 0.01 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>asi.cursor.001</object-name>
+    <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  <!--
+  <animation>
+    <type>translate</type>
+    <object-name>asi.bug</object-name>
+    <property>/instrumentation/zkv1000/afcs/selected-ias-kt-diff</property>
+    <interpolation>
+      <entry><ind> -30 </ind><dep> -0.0331 </dep></entry>
+      <entry><ind>   0 </ind><dep>  0.0000 </dep></entry>
+      <entry><ind>  30 </ind><dep>  0.0331 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  -->
+  <!-- ALTITUDE INDICATOR -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt.tape</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> 0.0000437 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt.cursor.10000</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <step> 10000 </step>
+    <factor> -0.00001 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt.cursor.01000</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <step> 1000 </step>
+    <factor> -0.0001 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt.cursor.00100</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <step> 100 </step>
+    <factor> -0.001 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>textranslate</type>
+    <object-name>alt.cursor.00011</object-name>
+    <property>/instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor> -0.01 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  <!--
+  <animation>
+    <type>translate</type>
+    <object-name>alt.bug</object-name>
+    <property>/instrumentation/zkv1000/pfd/afcs/selected-alt-ft-diff</property>
+    <interpolation>
+      <entry><ind> -300 </ind><dep> -0.0358 </dep></entry>
+      <entry><ind>    0 </ind><dep>  0.0000 </dep></entry>
+      <entry><ind>  300 </ind><dep>  0.0358 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  -->
+  <!-- VERTICAL SPEED INDICATOR -->
+  <animation>
+    <type>translate</type>
+    <object-name>alt.vs.ptr</object-name>
+    <property>/velocities/vertical-speed-fps</property>
+    <interpolation>
+      <entry><ind> -33.3333333 </ind><dep> -0.03 </dep></entry>
+      <entry><ind>   0.0000000 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  33.3333333 </ind><dep>  0.03 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>alt.vs.bug</object-name>
+    <property>/autopilot/settings/vertical-speed-fpm</property>
+    <interpolation>
+      <entry><ind> -2000 </ind><dep> -0.03 </dep></entry>
+      <entry><ind>     0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  2000 </ind><dep>  0.03 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+  
+  <!-- COMPASS ROSE -->
+  <animation>
+    <type>rotate</type>
+    <object-name>hsi.compass</object-name>
+    <property>/orientation/heading-magnetic-deg</property>
+    <center>
+      <x-m>  0.00600 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.03762 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- HORIZONTAL SITUATION INDICATOR -->
+  <!--
+  <animation>
+    <type>select</type>
+    <object-name>hsi.crs.pointer</object-name>
+    <object-name>hsi.crs.deflect.ref</object-name>
+    <object-name>hsi.crs.plane</object-name>
+    <object-name>hsi.BRG1</object-name>
+    <condition>
+      <property>/instrumentation/zkv1000/pfd/cdi/visible</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <type>texmultiple</type>
+    <object-name>hsi.crs.deflection</object-name>
+    <object-name>hsi.crs.pointer</object-name>
+    <transform>
+      <subtype>textranslate</subtype>
+      <property>/instrumentation/zkv1000/pfd/cdi/pointer-type</property>
+      <factor> 0.166666667 </factor>
+      <axis>
+        <x> 1 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </axis>
+    </transform>
+    <transform>
+      <subtype>textranslate</subtype>
+      <property>/instrumentation/zkv1000/pfd/cdi/from-flag</property>
+      <factor> 0.166666667 </factor>
+      <axis>
+        <x> 1 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </axis>
+    </transform>
+  </animation>
+  -->  
+  <animation>
+    <type>rotate</type>
+    <object-name>hsi.crs.pointer</object-name>
+    <object-name>hsi.crs.deflect.ref</object-name>
+    <object-name>hsi.crs.deflection</object-name>
+    <object-name>hsi.bug.HDG</object-name>
+    <property>/orientation/heading-magnetic-deg</property>
+    <center>
+      <x-m>  0.004 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.038 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  <!--
+  <animation>
+    <type>rotate</type>
+    <object-name>hsi.crs.pointer</object-name>
+    <object-name>hsi.crs.deflect.ref</object-name>
+    <object-name>hsi.crs.deflection</object-name>
+    <property>/instrumentation/zkv1000/pfd/cdi/course</property>
+    <center>
+      <x-m>  0.004 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.038 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>hsi.crs.deflection</object-name>
+    <property>/instrumentation/zkv1000/pfd/cdi/course-deflection</property>
+    <factor> 0.006 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>hsi.bug.HDG</object-name>
+    <property>/instrumentation/zkv1000/pfd/afcs/heading-bug-deg</property>
+    <center>
+      <x-m>  0.062 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.038 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  -->
+</PropertyList>

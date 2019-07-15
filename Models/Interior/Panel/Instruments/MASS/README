@@ -1,0 +1,29 @@
+MASS Description
+----------------
+
+
+
+
+Setting up :
+------------
+
+- Include the model in your model file.
+
+	<model> 
+		<path>Aircraft/Westland_Lynx-AH7/Instruments/MASS/MASS.xml</path>
+		<offsets> 
+			<x-m>xxx</x-m>
+			<y-m>xxx</y-m>
+			<z-m>xxx</z-m>
+		</offsets>
+	</model>
+
+
+- Declare MASS.nas in your foo-set.xml file. Write something like:
+	</nasal>
+		<MASS>
+			<file>Aircraft/foo/Nasal/MASS.nas</file>
+		</chronograph>
+	</nasal>
+
+

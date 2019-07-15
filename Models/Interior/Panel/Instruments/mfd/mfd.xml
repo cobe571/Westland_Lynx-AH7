@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>mainmfd.ac</path>
+  
+  <animation>
+    <object-name>bezel</object-name>
+    <object-name>bck</object-name>
+    <object-name>fond</object-name>
+    <object-name>buttons</object-name>
+    
+    <object-name>graduations</object-name>
+    <object-name>needle0</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+    <object-name>needle4</object-name>
+    <object-name>needle5</object-name>
+    <object-name>needle6</object-name>
+    <object-name>needle7</object-name>
+    <object-name>needle8</object-name>
+    <object-name>caract0</object-name>
+    <object-name>caract1</object-name>
+    <object-name>caract2</object-name>
+    <object-name>caract3</object-name>
+    <object-name>caract4</object-name>
+    <object-name>caract5</object-name>
+    <object-name>caract6</object-name>
+    <object-name>caract7</object-name>
+    <object-name>caract8</object-name>
+    <object-name>caract9</object-name>
+    <object-name>caract10</object-name>
+    <object-name>caract11</object-name>
+    <object-name>caract12</object-name>
+    <object-name>caract13</object-name>
+    <object-name>caract14</object-name>
+    <object-name>caract15</object-name>
+    <object-name>caract16</object-name>
+    <object-name>caract17</object-name>
+    <object-name>caract18</object-name>
+    <object-name>caract19</object-name>
+    <object-name>index0</object-name>
+    <object-name>index1</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>graduations</object-name>
+    <object-name>needle0</object-name>
+    <object-name>needle1</object-name>
+    <object-name>needle2</object-name>
+    <object-name>needle3</object-name>
+    <object-name>needle4</object-name>
+    <object-name>needle5</object-name>
+    <object-name>needle6</object-name>
+    <object-name>needle7</object-name>
+    <object-name>needle8</object-name>
+    <object-name>caract0</object-name>
+    <object-name>caract1</object-name>
+    <object-name>caract2</object-name>
+    <object-name>caract3</object-name>
+    <object-name>caract4</object-name>
+    <object-name>caract5</object-name>
+    <object-name>caract6</object-name>
+    <object-name>caract7</object-name>
+    <object-name>caract8</object-name>
+    <object-name>caract9</object-name>
+    <object-name>caract10</object-name>
+    <object-name>caract11</object-name>
+    <object-name>caract12</object-name>
+    <object-name>caract13</object-name>
+    <object-name>caract14</object-name>
+    <object-name>caract15</object-name>
+    <object-name>caract16</object-name>
+    <object-name>caract17</object-name>
+    <object-name>caract18</object-name>
+    <object-name>caract19</object-name>
+    <object-name>index0</object-name>
+    <object-name>index1</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>bezel</object-name>
+    <!-- <object-name>screen</object-name> -->
+    <object-name>fond</object-name>
+    <object-name>buttons</object-name>
+    <!--
+    <condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    -->
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <!-- <factor-prop>controls/lighting/luminosite-lights</factor-prop> -->
+      <blue>  0.2 </blue>
+      <red>   0.2 </red>
+      <green> 0.2 </green>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>needle0</object-name>
+    <property>sim/model/uh60/torque-pct</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 440 </ind><dep>  180 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.05789 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.02688 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>index0</object-name>
+    <property>sim/model/uh60/torque-pct</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 440 </ind><dep>  180 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0.05789 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.02688 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

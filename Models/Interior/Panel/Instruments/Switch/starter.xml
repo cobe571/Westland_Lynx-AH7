@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>starter.ac</path>
+
+  <animation>
+    <object-name>Switch</object-name>
+    <object-name>base</object-name>
+    <object-name>info</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Switch</object-name>
+    <object-name>base</object-name>
+    <object-name>info</object-name>
+    <emission>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.startEngine(1)</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>nasal</command>
+          <script>controls.startEngine(0)</script>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>Switch</object-name>
+    <property>controls.startEngine</property>
+    <factor> 0.004 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
+

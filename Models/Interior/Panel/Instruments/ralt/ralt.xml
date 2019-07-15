@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>ralt.ac</path>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>KRA.vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>KRA.face</object-name>
+    <object-name>KRA.knob</object-name>
+    <object-name>KRA.needle</object-name>
+    <object-name>KRA.bug</object-name>
+    <object-name>KRA.cache</object-name>
+    <object-name>KRA.flag</object-name>
+   <emission>
+            <red>   0.005 </red>
+      <green> 0.015 </green>
+      <blue>  0.030 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+ 
+ <animation>
+    <type>rotate</type>
+    <object-name>KRA.flag</object-name>
+    <!--<property>position/altitude-agl-ft</property>-->
+	<property>sim/multiplay/generic/float[17]</property>
+    <interpolation>      
+		<entry><ind>    0 </ind><dep>   0 </dep></entry>
+		<entry><ind>    3 </ind><dep>   1 </dep></entry>
+		<entry><ind>    4 </ind><dep>  -1 </dep></entry>
+		<entry><ind>    6 </ind><dep> -45 </dep></entry>
+		<entry><ind> 2500 </ind><dep> -50 </dep></entry>     
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>   
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>KRA.needle</object-name>
+   <!-- <property>position/altitude-agl-ft</property>-->
+   <property>sim/multiplay/generic/float[17]</property>
+    <interpolation>
+		<entry><ind>    0 </ind><dep>   0 </dep></entry>
+		<entry><ind>    4 </ind><dep>  90 </dep></entry>
+		<entry><ind>    5 </ind><dep> 355 </dep></entry>
+		<entry><ind>   25 </ind><dep> 337 </dep></entry><!-- minus 5 -->
+		<entry><ind>   50 </ind><dep> 315 </dep></entry><!-- minus 5 -->
+		<entry><ind>  100 </ind><dep> 275 </dep></entry><!-- minus 5 -->
+		<entry><ind>  150 </ind><dep> 232 </dep></entry><!-- minus 5 -->
+		<entry><ind>  200 </ind><dep> 192 </dep></entry><!-- minus 8 -->
+		<entry><ind>  300 </ind><dep> 175 </dep></entry><!-- minus 5 -->
+		<entry><ind>  400 </ind><dep> 160 </dep></entry><!-- minus 5 -->
+		<entry><ind>  500 </ind><dep> 143 </dep></entry><!-- minus 5 -->
+		<entry><ind> 1000 </ind><dep> 132 </dep></entry>
+		<entry><ind> 1500 </ind><dep> 120 </dep></entry>
+		<entry><ind> 2000 </ind><dep> 108 </dep></entry>
+		<entry><ind> 5000 </ind><dep> 103 </dep></entry>      
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>KRA.bug</object-name>
+    <property>/instrumentation/radar-altimeter/decision-height</property>
+    <interpolation>
+      <entry><ind>    0 </ind><dep> 180 </dep></entry>
+      <entry><ind>   50 </ind><dep> 140 </dep></entry>
+      <entry><ind>  100 </ind><dep> 100 </dep></entry>
+      <entry><ind>  200 </ind><dep>  15 </dep></entry>
+      <entry><ind>  300 </ind><dep>   0 </dep></entry>
+      <entry><ind>  400 </ind><dep> -15 </dep></entry>
+      <entry><ind>  500 </ind><dep> -32 </dep></entry>
+      <entry><ind> 1000 </ind><dep> -45 </dep></entry>
+      <entry><ind> 1500 </ind><dep> -55 </dep></entry>
+      <entry><ind> 2000 </ind><dep> -65 </dep></entry>
+      <entry><ind> 2500 </ind><dep> -70 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+	<!-- DH button -->
+	<animation> 
+		<object-name>KRA.DHoff</object-name>
+		<type>material</type>
+		<factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+			  <condition>
+				   <equals>
+					<property>/instrumentation/radar-altimeter/decision-height-light</property>
+					<value>1</value>
+				   </equals> 
+			  </condition>
+		<emission>	  			  
+			<red>0.6</red>
+			<green>0.5</green>
+			<blue>0.0</blue>
+		</emission>
+	</animation>
+	
+<!-- adjust DH -->
+
+	<animation>
+    <type>pick</type>
+    <object-name>inhg.dn</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>nasal</command>
+    <script>
+    if (getprop("/autopilot/locks/altitude") == "altitude-hold"){
+      setprop("/autopilot/settings/target-altitude-ft", 
+        getprop("autopilot/settings/target-altitude-ft") -100);
+    }
+    elsif (getprop("/autopilot/locks/altitude") == "vertical-speed-hold"){
+      setprop("/autopilot/settings/vertical-speed-fpm", 
+        getprop("autopilot/settings/vertical-speed-fpm") -100);
+    }
+    else{
+      setprop("/instrumentation/radar-altimeter/decision-height", 
+        getprop("/instrumentation/radar-altimeter/decision-height") -10);
+    }
+    </script>    
+    </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>inhg.dn</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+     <command>nasal</command>
+    <script>
+    if (getprop("/autopilot/locks/altitude") == "altitude-hold"){
+      setprop("/autopilot/settings/target-altitude-ft", 
+        getprop("autopilot/settings/target-altitude-ft") -100);
+    }
+    elsif (getprop("/autopilot/locks/altitude") == "vertical-speed-hold"){
+      setprop("/autopilot/settings/vertical-speed-fpm", 
+        getprop("autopilot/settings/vertical-speed-fpm") -100);
+    }
+    else{
+      setprop("/instrumentation/radar-altimeter/decision-height", 
+        getprop("/instrumentation/radar-altimeter/decision-height") -10);
+    }
+    </script>    
+    </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>inhg.up</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+      <command>nasal</command>
+    <script>
+    if (getprop("/autopilot/locks/altitude") == "altitude-hold"){
+      setprop("/autopilot/settings/target-altitude-ft", 
+        getprop("autopilot/settings/target-altitude-ft") +100);
+    }
+    elsif (getprop("/autopilot/locks/altitude") == "vertical-speed-hold"){
+      setprop("/autopilot/settings/vertical-speed-fpm", 
+        getprop("autopilot/settings/vertical-speed-fpm") +100);
+    }  
+    else{
+      setprop("/instrumentation/radar-altimeter/decision-height", 
+        getprop("/instrumentation/radar-altimeter/decision-height") +10);
+    }
+    </script>    
+    </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>inhg.up</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+    <command>nasal</command>
+    <script>
+    if (getprop("/autopilot/locks/altitude") == "altitude-hold"){
+      setprop("/autopilot/settings/target-altitude-ft", 
+        getprop("autopilot/settings/target-altitude-ft") +100);
+    }
+    elsif (getprop("/autopilot/locks/altitude") == "vertical-speed-hold"){
+      setprop("/autopilot/settings/vertical-speed-fpm", 
+        getprop("autopilot/settings/vertical-speed-fpm") +100);
+    }  
+    else{
+      setprop("/instrumentation/radar-altimeter/decision-height", 
+        getprop("/instrumentation/radar-altimeter/decision-height") +10);
+    }
+    </script>    
+    </binding>
+    </action>
+  </animation>
+	
+</PropertyList>
+

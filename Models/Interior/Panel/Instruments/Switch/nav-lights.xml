@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>nav-lights.ac</path>
+
+  <animation>
+    <object-name>Switch</object-name>
+    <object-name>base</object-name>
+    <object-name>info</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Switch</object-name>
+    <object-name>base</object-name>
+    <object-name>info</object-name>
+    <emission>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
+    <factor-prop>/controls/lighting/dash-dim</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>Switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>controls/lighting/beacon</property>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/switch</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch</object-name>
+    <property>/controls/lighting/nav-lights</property>
+    <factor> 35 </factor>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
+
