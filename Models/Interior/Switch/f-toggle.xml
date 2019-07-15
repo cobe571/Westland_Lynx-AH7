@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<PropertyList>
+
+  <path>f-toggle.ac</path>
+
+
+  <animation>
+
+    <object-name>Handle</object-name>
+
+    <object-name>Base</object-name>
+
+    <object-name>Tube</object-name>
+
+  </animation>
+
+
+  <animation>
+
+    <type>material</type>
+
+    <object-name>Handle</object-name>
+
+    <object-name>Base</object-name>
+
+    <object-name>Tube</object-name>
+
+
+   </animation>
+
+
+  <animation>
+
+    <type>pick</type>
+
+    <object-name>Handle</object-name>
+
+    <object-name>info</object-name>
+
+    <action>
+
+      <button>0</button>
+
+      <repeatable>false</repeatable>
+
+      <binding>
+
+        <command>nasal</command>
+
+        <script>floats.toggle_floats();</script>
+
+      </binding>
+
+      <binding>
+
+        <command>property-toggle</command>
+
+        <property>sim/model/sound/click</property>
+
+        <value>1</value>
+
+      </binding>
+
+    </action>
+
+  </animation>
+
+
+  <animation>
+
+    <type>rotate</type>
+
+    <object-name>Handle</object-name>
+ 
+    <property>sim/multiplay/generic/float[0]</property>
+
+
+    <factor> 45 </factor>
+
+    <axis>
+
+      <x>  0 </x>
+
+      <y>  1 </y>
+
+      <z>  0 </z>
+
+    </axis>
+
+  </animation>
+
+
+  <animation>
+   <type>select</type>
+    <object-name>Handle</object-name>
+
+    <object-name>Base</object-name>
+
+    <object-name>Tube</object-name>
+   <condition>
+    <property>sim/model/floats/emergencyfloats</property> 
+   </condition>
+  </animation>
+</PropertyList>

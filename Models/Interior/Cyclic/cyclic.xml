@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+     =========================================================
+            Cyclic "Westland-Lynx-AH7" Animation file
+         
+                    Patrizio MELIS : Apr. 2019
+		   
+                        CC-BY-NC-SA 4.0
+                               
+     Strictly NOT allowed commercial projects with these files
+
+     =========================================================
+-->
+
+<PropertyList>
+
+  <path>cyclic.ac</path>
+
+  <animation>
+    <type>range</type>
+    <min-m>  0 </min-m>
+    <max-m> 35 </max-m>
+  </animation>
+    
+  <animation>
+    <!-- Objects List -->
+    <object-name>CYC-AFCS-CUTOUT</object-name>	
+    <object-name>CYC-BOLTS</object-name>
+    <object-name>CYC-CAC-CUTOUT</object-name>	
+    <object-name>CYC-CWP-CANCEL</object-name>
+    <object-name>CYC-FIRE</object-name>
+    <object-name>CYC-FIRE-COVER</object-name>	
+    <object-name>CYC-HANDLE</object-name>
+    <object-name>CYC-POINTER</object-name>
+    <object-name>CYC-PTT</object-name>
+    <object-name>CYC-REL</object-name>
+    <object-name>CYC-STICK</object-name>
+  </animation>
+
+  <animation>
+    <!-- Objects Linked To Texture -->
+    <type>material</type>
+    <object-name>CYC-AFCS-CUTOUT</object-name>	
+    <object-name>CYC-BOLTS</object-name>
+    <object-name>CYC-CAC-CUTOUT</object-name>	
+    <object-name>CYC-CWP-CANCEL</object-name>
+    <object-name>CYC-FIRE</object-name>
+    <object-name>CYC-FIRE-COVER</object-name>	
+    <object-name>CYC-HANDLE</object-name>
+    <object-name>CYC-POINTER</object-name>
+    <object-name>CYC-PTT</object-name>
+    <object-name>CYC-REL</object-name>
+    <object-name>CYC-STICK</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>cyclic</texture-prop>
+    <texture>cyclic.jpg</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <animation>
+    <name>Complete-Cyclic</name>
+    <!-- Objects Put On List For Main Animation -->
+    <object-name>CYC-AFCS-CUTOUT</object-name>	
+    <object-name>CYC-BOLTS</object-name>
+    <object-name>CYC-CAC-CUTOUT</object-name>	
+    <object-name>CYC-CWP-CANCEL</object-name>
+    <object-name>CYC-FIRE</object-name>
+    <object-name>CYC-FIRE-COVER</object-name>	
+    <object-name>CYC-HANDLE</object-name>
+    <object-name>CYC-POINTER</object-name>
+    <object-name>CYC-PTT</object-name>
+    <object-name>CYC-REL</object-name>
+    <object-name>CYC-STICK</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Complete-Cyclic</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>9</factor>
+    <center>
+          <x-m> 0.00 </x-m>
+          <y-m> 0.00 </y-m>
+          <z-m> 0.00 </z-m>
+    </center>
+        <axis>
+          <x>  0 </x>
+          <y> -1 </y>
+          <z>  0 </z>
+        </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Complete-Cyclic</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>9</factor>
+    <center>
+          <x-m> 0.00 </x-m>
+          <y-m> 0.00 </y-m>
+          <z-m> 0.00 </z-m>
+    </center>
+        <axis>
+          <x> -1 </x>
+          <y>  0 </y>
+          <z>  0 </z>
+        </axis>
+  </animation>
+
+</PropertyList>
