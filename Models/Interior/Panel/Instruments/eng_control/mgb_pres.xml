@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>oilpsi.ac</path>
+
+ <animation>
+  <type>scale</type>
+  <x-offset>0.59</x-offset>
+  <y-offset>0.59</y-offset>
+  <z-offset>0.59</z-offset>
+ </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>OILpsi.face</object-name>
+        <object-name>OILpsi.needle</object-name>
+        <emission>
+            <red>   0.005 </red>
+      <green> 0.015 </green>
+      <blue>  0.030 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+    </animation>
+
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+	
+  <animation>
+    <type>rotate</type>
+    <object-name>OILpsi.needle</object-name>
+
+    <!-- Attention: This uses the ratio to calulate the PSI value in relation to the scale, used on the instrument, not in relation to real life, where the ratio is 14.5038 
+         Have a look into engines.nas (geed)
+    -->
+    <expression>
+       <product>
+         <property>/engines/engine/oil-pressure-bar</property>
+         <property>/engines/oilp-ratio-bar-to-psi</property>
+       </product>
+     </expression>
+
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+	
+	
+
+</PropertyList>
