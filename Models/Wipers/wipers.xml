@@ -1,0 +1,233 @@
+<?xml version="1.0" ?>
+
+<PropertyList>
+
+  <path>wipers.ac</path>
+
+<!-- wiper animation -->
+	
+	<animation>
+	<name>wiper_cplt</name>
+	<object-name>wiperarm.001</object-name>
+	<object-name>wiperblade.001</object-name>
+	</animation>
+	
+	<animation>
+	<name>wiper_plt</name>
+	<object-name>wiperarm.002</object-name>
+	<object-name>wiperblade.002</object-name>
+	</animation>
+	
+	<!-- Wiper Pilot -->
+  <animation>
+    <type>rotate</type>
+   <!-- <object-name>wiper_plt</object-name>-->
+   <object-name>wiperarm.002</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+   <!-- <center>
+      <x-m> 3.009</x-m>
+      <y-m> 0.149</y-m>
+      <z-m> 0.13</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0.0</y>
+      <z>0</z>
+    </axis>-->
+	<factor>0.6</factor>
+	 <axis>
+   <x1-m> 0.055</x1-m>
+   <y1-m> 0.475</y1-m>
+   <z1-m> -0.032</z1-m>
+   <x2-m>0</x2-m>
+   <y2-m> 0.475</y2-m>
+   <z2-m>0</z2-m>
+  </axis>
+	</animation>
+	
+	 <animation>
+    <type>translate</type>
+   <!-- <object-name>wiper_plt</object-name>-->
+  <object-name>wiperblade.002</object-name>
+   <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+ <factor>0.005</factor>
+	
+  
+   <center>
+      <x-m> -2.6</x-m>
+      <y-m> 0.06</y-m>
+      <z-m> 0.535</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+	</animation>
+	
+	 <animation>
+    <type>translate</type>
+   <!-- <object-name>wiper_plt</object-name>-->
+  <object-name>wiperblade.002</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+ <factor>0.00087</factor>
+	
+  
+   <center>
+      <x-m> 0.175</x-m>
+      <y-m> 0.135</y-m>
+      <z-m> 0.33</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+	</animation>
+	
+	<!-- <animation>
+    <type>translate</type>
+ 
+  <object-name>wiperblade.002</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+ <factor>0.0012</factor>
+	
+  
+   <center>
+       <x-m> 0.175</x-m>
+      <y-m> 0.135</y-m>
+      <z-m> 0.33</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+	</animation>-->
+	
+		<!-- Wiper CoPilot -->
+  <animation>
+    <type>rotate</type>
+    <object-name>wiperarm.001</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+   <factor>-0.6</factor>
+	 <axis>
+   <x1-m> 0.055</x1-m>
+   <y1-m> -0.475</y1-m>
+   <z1-m> -0.032</z1-m>
+   <x2-m>0</x2-m>
+   <y2-m> -0.475</y2-m>
+   <z2-m>0</z2-m>
+  </axis>
+	</animation>
+	
+	
+	 <animation>
+    <type>translate</type>
+   <!-- <object-name>wiper_plt</object-name>-->
+  <object-name>wiperblade.001</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+ <factor>0.0051</factor>
+	
+  
+   <center>
+      <x-m> -2.6</x-m>
+      <y-m> -0.06</y-m>
+      <z-m> 0.535</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+	</animation>
+	
+	 <animation>
+    <type>translate</type>
+   <!-- <object-name>wiper_plt</object-name>-->
+  <object-name>wiperblade.001</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+ <factor>0.00087</factor>
+	
+  
+   <center>
+     <x-m> 0.175</x-m>
+      <y-m> -0.135</y-m>
+      <z-m> 0.33</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+	</animation>
+	
+<!--	 <animation>
+    <type>translate</type>
+  
+  <object-name>wiperblade.001</object-name>
+  <property>sim/multiplay/generic/float[10]</property>
+<condition>
+<greater-than>
+      <property>controls/wiper/speed</property>
+	  <value>-1</value>
+	  </greater-than>
+    </condition>
+ <factor>0.0012</factor>
+	
+  
+   <center>
+      <x-m> 0.175</x-m>
+      <y-m> -0.135</y-m>
+      <z-m> 0.33</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+	</animation>-->
+
+</PropertyList>
