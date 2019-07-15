@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<name>(Military) helicopter HUD</name>
+
+<enable3d>false</enable3d>
+
+
+
+
+<!-- Tilad stuff -->
+
+	<label>
+		<name>top box line</name>
+		<x>0</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>200</height>
+		<format>________________________________________________________________</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line1</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>194</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line2</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>183</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line3</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>172</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line4</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>161</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line5</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>150</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line6</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>139</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line7</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>128</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line8</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>117</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line9</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>106</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line10</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>95</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line11</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>84</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line12</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>73</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line13</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>62</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line14</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>51</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line15</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>40</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+		<label>
+		<name>left box line16</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>29</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line17</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>18</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line18</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>7</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line19</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-4</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line20</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-15</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line21</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-26</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line22</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-37</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line22</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-48</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line23</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-59</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+		<label>
+		<name>left box line24</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-70</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line25</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-81</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line25</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-92</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line26</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-103</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line27</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-114</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line28</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-125</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line29</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-136</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line30</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-147</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line31</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-158</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line32</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-169</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line33</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-180</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>left box line34</name>
+		<x>-162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-191</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	
+	<label>
+		<name>right box line1</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>194</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+		<label>
+		<name>right box line2</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>183</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line3</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>172</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line4</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>161</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line5</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>150</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line6</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>139</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line7</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>128</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line8</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>117</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line9</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>106</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line10</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>95</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line11</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>84</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line12</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>73</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line13</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>62</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line14</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>51</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>rght box line15</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>40</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+		<label>
+		<name>right box line16</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>29</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line17</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>18</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line18</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>7</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line19</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-4</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line20</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-15</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line21</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-26</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line22</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-37</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line22</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-48</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line23</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-59</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+		<label>
+		<name>right box line24</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-70</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line25</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-81</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line25</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-92</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line26</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-103</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line27</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-114</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line28</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-125</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line29</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-136</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line30</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-147</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line31</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-158</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line32</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-169</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line33</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-180</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	<label>
+		<name>right box line34</name>
+		<x>162</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-191</height>
+		<format>I</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+	
+	
+	
+	<label>
+		<name>bottom box line</name>
+		<x>0</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>-195</height>
+		<format>_______________________________________________________________</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+
+
+	<tape>
+		<name>Gyrocompass2</name>
+		<input>
+			<property>/orientation/heading-deg</property>
+			<factor>0.1</factor>
+		</input>
+		<x>-90</x>
+		<y>110</y>
+		<width>200</width>
+		<height>25</height>
+		<display-span>4.0</display-span>
+		<modulo>36</modulo>
+		<option>top</option>
+		<label-gap-width>22</label-gap-width>
+		<major-divisions>1</major-divisions>
+		<minor-divisions>0.5</minor-divisions>
+		<tick-bottom>true</tick-bottom>
+		<tick-top>true</tick-top>
+		<tick-right>true</tick-right>
+		<tick-left>true</tick-left>
+		<cap-bottom>true</cap-bottom>
+		<cap-top>true</cap-top>
+		<cap-right>true</cap-right>
+		<cap-left>true</cap-left>
+		<marker-offset>0</marker-offset>
+		<enable-pointer>true</enable-pointer>
+		<pointer-type>fixed</pointer-type>
+		<tick-type>line</tick-type>
+		<tick-length>variable</tick-length>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</tape>
+
+	<aiming-reticle>
+		<x>5</x>
+		<y>-9</y>
+		<width>18</width> 
+		<height>18</height>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</aiming-reticle>
+	
+	<label>
+		<name>mils</name>
+		<x>4</x>
+		<y>-5</y>
+		<width>20</width>
+		<height>10</height>
+		<format>+-----+----- -----+-----+</format>
+		<halign>center</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label>
+
+	
+	<label>
+		<name>Pitch2</name>
+		<x>180</x>
+		<y>-23</y>
+		<width>28</width>
+		<height>8</height>
+		 <box>true</box>
+        <option>left</option>
+		<input>
+			<property>sim/current-view/pitch-offset-deg</property>
+		</input>
+		<format>%4.2f</format>
+		<halign>right</halign>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</label> 	
+	
+	  <label>
+        <name>lat</name>
+        <x>180</x>
+        <y>5</y>
+        <width>45</width>
+        <height>10</height>
+        <input>
+            <property>instrumentation/gps/indicated-latitude-deg</property>
+        </input>
+        <format>%3.3f</format>
+        <halign>left</halign>
+        <box>true</box>
+        <option>left</option>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+    </label>
+	
+	<label>
+        <name>long</name>
+        <x>180</x>
+        <y>-10</y>
+        <width>45</width>
+        <height>10</height>
+        <input>
+            <property>instrumentation/gps/indicated-longitude-deg</property>
+        </input>
+        <format>%3.3f</format>
+        <halign>left</halign>
+        <box>true</box>
+        <option>left</option>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+    </label>
+	
+
+	<tape>
+		<name>view-heading</name>
+		<x>-80</x>
+		<y>-130</y>
+		<width>200</width>
+		<height>20</height>
+		<input>
+			<property>sim/current-view/heading-offset-deg</property>
+			<factor>0.1</factor>
+			<max>85</max>
+			<min>0</min>
+		</input>
+		<major-divisions>1</major-divisions>
+		<minor-divisions>0.5</minor-divisions>
+		<display-span>3.5</display-span>
+		<option>left</option>
+		<option>horizontal</option>
+		<tick-bottom>true</tick-bottom>
+		<tick-top>true</tick-top>
+		<tick-right>false</tick-right>
+		<tick-left>true</tick-left>
+		<cap-bottom>true</cap-bottom>
+		<cap-top>true</cap-top>
+		<cap-right>true</cap-right>
+		<cap-left>true</cap-left>
+		<marker-offset>5</marker-offset>
+		<enable-pointer>false</enable-pointer>
+		<pointer-type>fixed</pointer-type>
+		 <condition>
+            <equals>
+                 <property>/sim/current-view/name</property>
+                  <value>TILAD</value>
+            </equals>
+        </condition>
+	</tape>
+
+
+</PropertyList>
