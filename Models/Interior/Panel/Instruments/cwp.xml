@@ -1,0 +1,712 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+  <animation>
+        <type>range</type>
+        <min-m>0</min-m>
+        <max-m>75</max-m>
+    </animation>
+ 
+
+<!-- warning panel ligts -->
+  
+  <!-- BLUE Lights -->
+  
+    <animation>
+  <type>material</type>
+  <object-name>rotor1</object-name>
+   <object-name>fuel1</object-name>
+   <object-name>fuel1a</object-name>
+   <object-name>oil1</object-name>
+   <object-name>oil1a</object-name>
+   <object-name>oil2</object-name>
+   <object-name>oil2a</object-name>
+   <object-name>oil3</object-name>
+   <object-name>oil3a</object-name>
+   <object-name>fuel2</object-name>
+   <object-name>fuel2a</object-name>
+    <object-name>press1</object-name>
+   <object-name>press2</object-name>
+    <object-name>eng1</object-name>
+   <object-name>eng2</object-name>
+   <object-name>fire</object-name>
+   <object-name>hyd1</object-name>
+   <object-name>hyd2</object-name>
+    <object-name>gen1</object-name>
+	 <object-name>gen2</object-name>
+	 <object-name>deck</object-name>
+	 <object-name>lock</object-name>
+	 <object-name>afcs</object-name>
+	 <object-name>iff1</object-name>
+	 <object-name>iff2</object-name>
+	 <object-name>brakes</object-name>
+	 
+  <ambient>
+    <red>0.0</red>
+    <green>0.0</green>
+    <blue>1.5</blue>
+  </ambient>
+  <diffuse>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>10</blue>
+  </diffuse>
+  <emission>
+    <red>0.1</red>
+    <green>0.1</green>
+    <blue>1.5</blue>
+  </emission> 
+ </animation>
+ 
+ 
+ <text>
+  <name>gen1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.96</x-m>
+            <y-m>0.215</y-m>
+            <z-m>0.033</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">D.C.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <text>
+  <name>gen2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.96</x-m>
+            <y-m>0.2145</y-m>
+            <z-m>0.028</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">GEN</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <animation>
+    <type>select</type>
+    <object-name>gen1</object-name>
+	<object-name>gen2</object-name>
+  <condition>
+
+      <equals>
+        <property>controls/electric/engine/generator</property>
+        <value>true</value>
+      </equals>
+	  
+	
+	  </condition>
+  </animation>
+ 
+ <text>
+  <name>hyd1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.957</x-m>
+            <y-m>0.244</y-m>
+            <z-m>0.017</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">HYD.1</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <animation>
+        <type>select</type>
+        <object-name>hyd1</object-name>
+        
+        <condition>
+	<or>
+			<equals>
+			
+				<property>controls/hydraulic/system/electric-pump</property>
+						<value>false</value>
+			</equals>
+			<equals>
+			
+				<property>controls/hydraulic/system/engine-pump</property>
+						<value>false</value>
+			</equals>
+			
+				</or>
+			</condition>
+    </animation>
+ 
+  <text>
+  <name>hyd2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.957</x-m>
+            <y-m>0.276</y-m>
+            <z-m>0.017</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">HYD.2</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ 
+  <animation>
+        <type>select</type>
+        <object-name>hyd2</object-name>
+        
+        <condition>
+	<or>
+			<equals>
+			
+				<property>controls/hydraulic/system[1]/electric-pump</property>
+						<value>false</value>
+			</equals>
+			<equals>
+			
+				<property>controls/hydraulic/system[1]/engine-pump</property>
+						<value>false</value>
+			</equals>
+			
+				</or>
+			</condition>
+    </animation>
+ 
+  
+<text>
+  <name>oil1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.954</x-m>
+            <y-m>0.244</y-m>
+            <z-m>0.007</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ENG 1</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <text>
+  <name>oil1a</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.954</x-m>
+            <y-m>0.24</y-m>
+            <z-m>0.002</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">OIL PRESS</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ 
+ <animation>
+        <type>select</type>
+        <object-name>oil1</object-name>
+        <object-name>oil1a</object-name>
+        <condition>
+			<less-than>
+				<property>engines/engine/oil-pressure-bar</property>
+						<value>0.948</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+
+<text>
+  <name>oil2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.954</x-m>
+            <y-m>0.276</y-m>
+            <z-m>0.007</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ENG 2</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <text>
+  <name>oil2a</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.954</x-m>
+            <y-m>0.272</y-m>
+            <z-m>0.002</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">OIL PRESS</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <animation>
+        <type>select</type>
+        <object-name>oil2</object-name>
+        <object-name>oil2a</object-name>
+        <condition>
+			<less-than>
+				<property>engines/engine[1]/oil-pressure-bar</property>
+						<value>0.948</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+ 
+ <text>
+  <name>oil3</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+   <offsets>
+            <x-m>-2.952</x-m>
+            <y-m>0.207</y-m>
+            <z-m>-0.0213</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">OIL PRESS</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <text>
+  <name>oil3a</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+   <offsets>
+            <x-m>-2.951</x-m>
+            <y-m>0.212</y-m>
+            <z-m>-0.025</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">MGB</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+ <animation>
+        <type>select</type>
+        <object-name>oil3</object-name>
+        <object-name>oil3a</object-name>
+        <condition>
+			<less-than>
+				<property>rotors/gear/mgb-oil-pressure-bar</property>
+						<value>0.6</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+ 
+
+ <text>
+  <name>rotor1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+            <x-m>-2.954</x-m>
+            <y-m>0.241</y-m>
+            <z-m>-0.01</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">R/BRAKE</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+  
+   <animation>
+        <type>select</type>
+        <object-name>rotor1</object-name>
+        
+        <condition>
+			<equals>
+				<property>controls/rotor/brake</property>
+						<value>1</value>
+					</equals>
+					
+			</condition>
+    </animation>
+	
+	
+	 <text>
+  <name>fuel1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.954</x-m>
+            <y-m>0.15</y-m>
+            <z-m>-0.0069</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FUEL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <text>
+  <name>fuel1a</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.954</x-m>
+            <y-m>0.148</y-m>
+            <z-m>-0.0129</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOW 1</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+ 
+ <animation>
+        <type>select</type>
+        <object-name>fuel1</object-name>
+        <object-name>fuel1a</object-name>
+        <condition>
+			<less-than>
+				<property>consumables/fuel/tank/level-lbs</property>
+						<value>50</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+
+	<text>
+  <name>fuel2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.954</x-m>
+            <y-m>0.183</y-m>
+            <z-m>-0.0069</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FUEL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+   <text>
+  <name>fuel2a</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.954</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.0129</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOW 2</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+<animation>
+        <type>select</type>
+        <object-name>fuel2</object-name>
+        <object-name>fuel2a</object-name>
+        <condition>
+			<less-than>
+				<property>consumables/fuel/tank[1]/level-lbs</property>
+						<value>250</value>
+					</less-than>
+					
+			</condition>
+    </animation>
+	
+	
+<text>
+  <name>deck</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.952</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.021</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">DECK</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+<text>
+  <name>lock</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.9515</x-m>
+            <y-m>0.181</y-m>
+            <z-m>-0.025</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">LOCK</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text> 
+ 
+  <animation>
+        <type>select</type>
+        <object-name>deck</object-name>
+        <object-name>lock</object-name>
+      <condition>
+ <equals>
+ <property>controls/gear/launchbar</property>
+ <value>true</value>
+ </equals>
+</condition>
+    </animation>
+	
+	
+	 <text>
+  <name>eng1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+   <offsets>
+            <x-m>-2.952</x-m>
+            <y-m>0.246</y-m>
+            <z-m>-0.021</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">ENG</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+  <text>
+  <name>eng2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+ <offsets>
+            <x-m>-2.951</x-m>
+            <y-m>0.2455</y-m>
+            <z-m>-0.025</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FAIL</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+ 
+
+ <animation>
+        <type>select</type>
+        <object-name>eng1</object-name>
+        <object-name>eng2</object-name>
+      <condition>
+ <not-equals>
+ <property>controls/engines/engine/faults/serviceable</property>
+ <value>true</value>
+ </not-equals>
+</condition>
+    </animation>
+
+ <text>
+  <name>fire</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+   <offsets>
+            <x-m>-2.954</x-m>
+            <y-m>0.278</y-m>
+            <z-m>-0.01</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">FIRE</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+  <animation>
+        <type>select</type>
+        <object-name>fire</object-name>
+       
+      <condition>
+ <equals>
+  <property>instrumentation/annunciators/warning/engfire</property>
+ <value>true</value>
+ </equals>
+</condition>
+    </animation>
+	
+
+<text>
+  <name>afcs</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.952</x-m>
+            <y-m>0.115</y-m>
+            <z-m>-0.023</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">A.F.C.S.</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+<animation>
+        <type>select</type>
+        <object-name>afcs</object-name>
+        
+        <condition>
+ <or>
+  <not-equals>
+   <property>/autopilot/locks/heading</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/altitude</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/speed</property>
+   <value></value>
+  </not-equals>
+  <and>
+  <not-equals>
+   <property>/autopilot/locks/heading</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/altitude</property>
+   <value></value>
+  </not-equals>
+  </and>
+  <and>
+  <not-equals>
+   <property>/autopilot/locks/altitude</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/speed</property>
+   <value></value>
+  </not-equals>
+  </and>
+  <and>
+  <not-equals>
+   <property>/autopilot/locks/heading</property>
+   <value></value>
+  </not-equals>
+  <not-equals>
+   <property>/autopilot/locks/speed</property>
+   <value></value>
+  </not-equals>
+  </and>
+ </or>
+</condition>
+    </animation> 
+
+
+<text>
+  <name>iff1</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.952</x-m>
+            <y-m>0.0815</y-m>
+            <z-m>-0.021</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">IFF NOT</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	
+ 
+ <text>
+  <name>iff2</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.952</x-m>
+            <y-m>0.08</y-m>
+            <z-m>-0.025</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">WORKING</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>
+
+
+
+<text>
+  <name>brakes</name>
+  <font>charter.txf</font>
+  <character-size type="double">0.004</character-size>
+  <offsets>
+             <x-m>-2.955</x-m>
+            <y-m>0.0783</y-m>
+            <z-m>-0.01</z-m>
+			<pitch-deg>-10</pitch-deg>
+  </offsets>
+  <axis-alignment>yz-plane</axis-alignment>
+  <type type="string">literal</type>
+  <text type="string">BRAKES ON</text>
+  <draw-text type="bool">true</draw-text>
+  <alignment>left-top</alignment>
+ </text>	 
+
+	
+</PropertyList>
+
